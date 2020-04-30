@@ -1,0 +1,1293 @@
+log "Parsing configuration script"
+set ConfigGroup Config
+setb textureMemorySizeOK true
+if ($textureMemory == 0)
+    seti textureMemory       32
+    setb textureMemorySizeOK false
+endif
+seti cpuLevelUber       4
+seti cpuLevelHigh       3
+seti cpuLevelMedium     2
+seti cpuLevelLow        1
+seti cpuCutoffLow 2500
+seti cpuCutoffMed 2900
+seti cpuCutoffHigh 3700
+seti adjustedCPU $cpuSpeed
+setb cpuAMD false
+setb cpuIntel false
+setb pentium4 false
+if ($isMac)
+    setb cpuIntel true
+    seti cpuCutoffLow 2300
+    seti cpuCutoffMed 2700
+    seti cpuCutoffHigh 3600
+else
+    if (match("${cpu}", "*AuthenticAMD*"))
+        setb cpuAMD true
+        seti cpuCutoffLow 2200
+        seti cpuCutoffMed 2600
+        seti cpuCutoffHigh 3400
+    endif
+    if (match("${cpu}", "*GenuineIntel*"))
+        setb cpuIntel true
+        seti cpuCutoffLow 2300
+        seti cpuCutoffMed 2700
+        seti cpuCutoffHigh 3600
+    endif
+    if ( match("${cpu}", "GenuineIntel") and ($cpuFamily == 15) and ($cpuModel >= 0) and ($cpuModel <= 6))
+        setb pentium4 true
+    endif
+endif
+if ($cpuCount >= 4)
+    if ($pentium4)
+        seti adjustedCPU (round($adjustedCPU * 1.3))
+    else
+        seti adjustedCPU (round($adjustedCPU * 1.5))
+    endif
+elseif ($cpuCount >= 2)
+    if ($pentium4)
+        seti adjustedCPU (round($adjustedCPU * 1.1667))
+    else
+        seti adjustedCPU (round($adjustedCPU * 1.3334))
+    endif
+else
+    seti adjustedCPU (round($adjustedCPU * 1))
+endif
+if ($isMac == 0)
+    if ($osMajorVersion >= 6)
+        seti adjustedCPU (($adjustedCPU)-(200))
+    endif
+endif
+if ($adjustedCPU <= $cpuCutoffLow)
+    seti cpuLevel $cpuLevelLow
+elseif ($adjustedCPU <= $cpuCutoffMed)
+    seti cpuLevel $cpuLevelMedium
+elseif ($adjustedCPU <= $cpuCutoffHigh)
+    seti cpuLevel $cpuLevelHigh
+else
+    seti cpuLevel $cpuLevelUber
+endif
+seti threadLevelHigh       3
+seti threadLevelMedium     2
+seti threadLevelLow        1
+if ($cpuCount >= 2)
+    seti threadLevel $threadLevelHigh
+    setProp $ConfigGroup RenderD3DThreadingEnabled true
+    setProp $ConfigGroup RenderMultithreadingEnabled true
+elseif ($hyperthreading > 0)
+    seti threadLevel $threadLevelMedium
+else
+    seti threadLevel $threadLevelLow
+endif
+seti resolutionHigh         (1920 * 1200)
+seti resolutionMedium       (1600 * 900)
+seti resolutionLow          (1024 * 768)
+seti resolutionLevel $resolutionHigh
+seti cardLevelUber          5
+seti cardLevelHigh          4
+seti cardLevelMedium        3
+seti cardLevelLowmedium     2
+seti cardLevelLow           1
+seti cardLevel     $cardLevelUber
+include "GraphicsCards.sgr"
+setProp $ConfigGroup EnableSoftwareSkinning false
+setProp $ConfigGroup ShadowColorFormatWorkaround false
+seti gpumemAdjust 0
+if (match("${cardVendor}", "NVIDIA"))
+    setProp $ConfigGroup RenderShadowMode 2
+    setProp $ConfigGroup ShadowMapAllowNullColor 1
+elseif (match("${cardVendor}", "ATI"))
+    if ($isMac)
+        setProp $ConfigGroup RenderShadowMode 2
+    else
+        setProp $ConfigGroup RenderShadowMode 3
+        setProp $ConfigGroup ShadowMapForceDF16Available 1
+    endif
+    if ($osMajorVersion >= 6 and versionLessThan("7.14.0010.0630", "${driverVersion}") and not versionLessThan("7.14.0010.0636", "${driverVersion}"))
+        setProp $ConfigGroup ReportOldGraphicsDriver 1
+    endif
+    if ($isMac)
+        seti gpumemAdjust -64
+    endif
+elseif (match("${cardVendor}", "Intel"))
+    setProp $ConfigGroup ShadowColorFormatWorkaround true
+    setProp $ConfigGroup RenderShadowMode 2
+    setProp $ConfigGroup ShadowMapAllowNullColor 1
+    setProp $ConfigGroup EnableSoftwareSkinning true
+endif
+seti gpumemLevelUber         4
+seti gpumemLevelHigh         3
+seti gpumemLevelMedium       2
+seti gpumemLevelLow          1
+seti gpumemLevel $gpumemLevelUber
+seti adjustedTextureMemory ($textureMemory+$gpumemAdjust)
+if ($adjustedTextureMemory < 240)
+    seti gpumemLevel $gpumemLevelLow
+elseif ($adjustedTextureMemory < 480)
+    seti gpumemLevel $gpumemLevelMedium
+elseif ($adjustedTextureMemory < 960)
+    seti gpumemLevel $gpumemLevelHigh
+endif
+seti ramLevelUber         4
+seti ramLevelHigh         3
+seti ramLevelMedium       2
+seti ramLevelLow          1
+if ($osMajorVersion >= 6)
+     seti adjustedMemory (($memory)-(512))
+else
+     seti adjustedMemory $memory
+endif
+if($adjustedMemory <= 1840)
+    seti ramLevel $ramLevelLow
+elseif($adjustedMemory < 2760)
+    seti ramLevel $ramLevelMedium
+elseif($adjustedMemory < 4608)
+    seti ramLevel $ramLevelHigh
+else
+    seti ramLevel $ramLevelUber
+endif
+seti vMemoryLevelHigh    3
+seti vMemoryLevelMedium  2
+seti vMemoryLevelLow     1
+if ($virtualMemory > 4096)
+    seti vMemoryLevel $vMemoryLevelHigh
+elseif ($virtualMemory > 2048)
+    seti vMemoryLevel $vMemoryLevelMedium
+else
+    seti vMemoryLevel $vMemoryLevelLow
+endif
+if ($forcedCardLevel > 0)
+  seti cardLevel $forcedCardLevel
+endif
+if ($forcedCpuLevel > 0)
+  seti cpuLevel $forcedCpuLevel
+endif
+if ($cardLevel <= $cardLevelLow)
+    setProp $ConfigGroup IsMinSpec true
+endif
+seti Off 0
+seti On  1
+seti Low        1
+seti Medium     2
+seti High       3
+seti VeryHigh   4
+option NumBoots
+    integer 0
+        prop $ConfigGroup NumBoots 0
+end
+setProp $ConfigGroup RenderShadowCacheVBSize 65536
+setProp $ConfigGroup RenderShadowCacheIBSize 1048576
+setProp $ConfigGroup RenderInstancingVBSize 262144
+setProp $ConfigGroup RenderPickOcclusionQuery false
+setProp $ConfigGroup RenderPickFrameDelay 1
+setProp $ConfigGroup RenderPickFuzzinessRadius 0
+option LightingQuality
+    setting $Low
+		prop $ConfigGroup NumberCascadeLevels 1
+        prop $ConfigGroup ShadowMapSize 1024
+        prop $ConfigGroup RenderShadowsEnabled false
+        prop $ConfigGroup ShadowDecalEnabled false
+        prop $ConfigGroup LowDetailLightmaps true
+        prop $ConfigGroup HighRezTranslucency false
+        prop $ConfigGroup SsaoEnabled false
+        prop $ConfigGroup NormalMappingEnabled false
+        prop $ConfigGroup VolumetricLightScattering false
+        prop $ConfigGroup DofEnabled false
+        prop $ConfigGroup RenderExternalDropShadows true
+        prop $ConfigGroup InteriorSunShadows false
+    setting $Medium
+        prop $ConfigGroup NumberCascadeLevels 1
+        prop $ConfigGroup ShadowMapSize 1024
+        prop $ConfigGroup RenderShadowsEnabled true
+        prop $ConfigGroup ShadowDecalEnabled true
+        prop $ConfigGroup LowDetailLightmaps false
+        prop $ConfigGroup HighRezTranslucency false
+        prop $ConfigGroup SsaoEnabled true
+        prop $ConfigGroup NormalMappingEnabled true
+        prop $ConfigGroup VolumetricLightScattering true
+        prop $ConfigGroup DofEnabled true
+        prop $ConfigGroup RenderExternalDropShadows false
+        prop $ConfigGroup InteriorSunShadows false
+    setting $High
+        prop $ConfigGroup NumberCascadeLevels 3
+        prop $ConfigGroup ShadowMapSize 1024
+        prop $ConfigGroup RenderShadowsEnabled true
+        prop $ConfigGroup ShadowDecalEnabled true
+        prop $ConfigGroup LowDetailLightmaps false
+        prop $ConfigGroup HighRezTranslucency true
+        prop $ConfigGroup SsaoEnabled true
+        prop $ConfigGroup NormalMappingEnabled true
+        prop $ConfigGroup VolumetricLightScattering true
+        prop $ConfigGroup DofEnabled true
+        prop $ConfigGroup RenderExternalDropShadows false
+        prop $ConfigGroup InteriorSunShadows false
+    setting $VeryHigh
+        prop $ConfigGroup NumberCascadeLevels 3
+        prop $ConfigGroup ShadowMapSize 2048
+        prop $ConfigGroup RenderShadowsEnabled true
+        prop $ConfigGroup ShadowDecalEnabled true
+        prop $ConfigGroup LowDetailLightmaps false
+        prop $ConfigGroup HighRezTranslucency true
+        prop $ConfigGroup SsaoEnabled true
+        prop $ConfigGroup NormalMappingEnabled true
+        prop $ConfigGroup VolumetricLightScattering true
+        prop $ConfigGroup DofEnabled true
+        prop $ConfigGroup RenderExternalDropShadows false
+        prop $ConfigGroup InteriorSunShadows true
+end
+option GeneralReflections
+    setting $Off
+        prop $ConfigGroup WaterReflectionDetail 0
+        prop $ConfigGroup WaterReflectionAreaThresholdLot 1000
+        prop $ConfigGroup WaterReflectionAreaThresholdWorld 1000
+        prop $ConfigGroup RenderReflectionsEnabled false
+        prop $ConfigGroup MirrorFadeRadiusThreshold 1.0f
+        prop $ConfigGroup InteriorMirrorFarPlane 1.0f
+        prop $ConfigGroup ExteriorMirrorFarPlane 1.0f
+    setting $Low
+        prop $ConfigGroup WaterReflectionDetail 0
+        prop $ConfigGroup WaterReflectionAreaThresholdLot 1000
+        prop $ConfigGroup WaterReflectionAreaThresholdWorld 1000
+        prop $ConfigGroup RenderReflectionsEnabled true
+        prop $ConfigGroup MirrorFadeRadiusThreshold 1.1f
+        prop $ConfigGroup InteriorMirrorFarPlane 10.0f
+        prop $ConfigGroup ExteriorMirrorFarPlane 70.0f
+    setting $Medium
+        prop $ConfigGroup WaterReflectionDetail 1
+        prop $ConfigGroup WaterReflectionAreaThresholdLot 250
+        prop $ConfigGroup WaterReflectionAreaThresholdWorld 350
+        prop $ConfigGroup RenderReflectionsEnabled true
+        prop $ConfigGroup MirrorFadeRadiusThreshold 1.3f
+        prop $ConfigGroup InteriorMirrorFarPlane 15.0f
+        prop $ConfigGroup ExteriorMirrorFarPlane 100.0f
+    setting $High
+        prop $ConfigGroup WaterReflectionDetail 2
+        prop $ConfigGroup WaterReflectionAreaThresholdLot 50
+        prop $ConfigGroup WaterReflectionAreaThresholdWorld 75
+        prop $ConfigGroup RenderReflectionsEnabled true
+        prop $ConfigGroup MirrorFadeRadiusThreshold 1.3f
+        prop $ConfigGroup InteriorMirrorFarPlane 75.0f
+        prop $ConfigGroup ExteriorMirrorFarPlane 150.0f
+end
+option ObjectQuality
+    setting $Low
+        prop $ConfigGroup DropTexMipsOnLoad     1
+        prop $ConfigGroup TextureSizeThreshold  0
+        prop $ConfigGroup TrilinearEnabled  false
+        prop $ConfigGroup AnisoEnabled  false
+        prop $ConfigGroup ForceActiveLotObjectsToHighLOD false
+        prop $ConfigGroup RenderHideNonActiveFloorObjects true
+        prop $ConfigGroup EnableOpaqueWindow true
+        prop $ConfigGroup EnableCutoutRemoval true
+        prop $ConfigGroup EnableSimpleWallCorners true
+        prop $ConfigGroup EnableSimpleLotTerrain true
+        prop $ConfigGroup EnableRoofPeakRemoval true
+        prop $ConfigGroup EnableTrimDecorationRemoval true
+        prop $ConfigGroup EnableZeroThicknessWalls true
+        prop $ConfigGroup EnableMergedTrimModels true
+        prop $ConfigGroup EnabledDropNeighborLotNormalMaps false
+        prop $ConfigGroup ModularModelLODActive 1
+        prop $ConfigGroup ModularModelLODInactive 2
+        prop $ConfigGroup ModelLODRangeTier 2
+        prop $ConfigGroup NormalMapDistanceDropScale 2
+        if (not $isLiveEdit)
+            prop $ConfigGroup ObjectLODBias "4.0"
+        endif
+        prop $ConfigGroup RenderFadeTuning minspec
+    setting $Medium
+        prop $ConfigGroup DropTexMipsOnLoad 1
+        prop $ConfigGroup TextureSizeThreshold  1024
+        prop $ConfigGroup TrilinearEnabled  false
+        prop $ConfigGroup AnisoEnabled  false
+        prop $ConfigGroup ForceActiveLotObjectsToHighLOD true
+        prop $ConfigGroup RenderHideNonActiveFloorObjects false
+        prop $ConfigGroup EnableOpaqueWindow false
+        prop $ConfigGroup EnableCutoutRemoval false
+        prop $ConfigGroup EnableSimpleWallCorners false
+        prop $ConfigGroup EnableSimpleLotTerrain false
+        prop $ConfigGroup EnableRoofPeakRemoval false
+        prop $ConfigGroup EnableTrimDecorationRemoval true
+        prop $ConfigGroup EnableZeroThicknessWalls false
+        prop $ConfigGroup EnableMergedTrimModels true
+        prop $ConfigGroup EnabledDropNeighborLotNormalMaps false
+        prop $ConfigGroup ModularModelLODActive 0
+        prop $ConfigGroup ModularModelLODInactive 1
+        prop $ConfigGroup ModelLODRangeTier 1
+        prop $ConfigGroup NormalMapDistanceDropScale 2
+        if (not $isLiveEdit)
+            prop $ConfigGroup ObjectLODBias "1.0"
+        endif
+        prop $ConfigGroup RenderFadeTuning default
+    setting $High
+        prop $ConfigGroup DropTexMipsOnLoad 0
+        prop $ConfigGroup TextureSizeThreshold  2048
+        prop $ConfigGroup TrilinearEnabled  true
+        prop $ConfigGroup AnisoEnabled  true
+        prop $ConfigGroup ForceActiveLotObjectsToHighLOD true
+        prop $ConfigGroup RenderHideNonActiveFloorObjects false
+        prop $ConfigGroup EnableOpaqueWindow false
+        prop $ConfigGroup EnableCutoutRemoval false
+        prop $ConfigGroup EnableSimpleWallCorners false
+        prop $ConfigGroup EnableSimpleLotTerrain false
+        prop $ConfigGroup EnableRoofPeakRemoval false
+        prop $ConfigGroup EnableTrimDecorationRemoval false
+        prop $ConfigGroup EnableZeroThicknessWalls false
+        prop $ConfigGroup EnableMergedTrimModels true
+        prop $ConfigGroup EnabledDropNeighborLotNormalMaps false
+        prop $ConfigGroup ModularModelLODActive 0
+        prop $ConfigGroup ModularModelLODInactive 0
+        prop $ConfigGroup ModelLODRangeTier 0
+        prop $ConfigGroup NormalMapDistanceDropScale -1.0
+        if (not $isLiveEdit)
+            prop $ConfigGroup ObjectLODBias "0.6666"
+        endif
+        prop $ConfigGroup RenderFadeTuning default
+end
+if ($isLiveEdit)
+    setProp $ConfigGroup ObjectLODBias "0.6666"
+endif
+setProp $ConfigGroup ObjectLODInterestBias 0.56
+setProp $ConfigGroup WallCutoutAtlasSize 1024
+option VisualEffects
+    setting $Low
+        prop $ConfigGroup SwarmQuality 1
+        prop $ConfigGroup GPUParticleDensity 0.4
+        prop $ConfigGroup HighDetailWeatherEffects false
+    setting $Medium
+        prop $ConfigGroup SwarmQuality 2
+        prop $ConfigGroup GPUParticleDensity 0.7
+        prop $ConfigGroup HighDetailWeatherEffects false
+    setting $High
+        prop $ConfigGroup SwarmQuality 3
+        prop $ConfigGroup GPUParticleDensity 1
+        prop $ConfigGroup HighDetailWeatherEffects true
+end
+option PostProcessing
+    setting $Off
+        prop $ConfigGroup RenderPostProcessEnabled false
+    setting $On
+        prop $ConfigGroup RenderPostProcessEnabled true
+end
+option UseUncompressedTextures
+	setting $Off
+		prop $ConfigGroup UseUncompressedTextures false
+	setting $On
+		prop $ConfigGroup UseUncompressedTextures true
+end
+setOption UseUncompressedTextures $Off
+option TerrainQuality
+    setting $Low
+        prop $ConfigGroup TerrainLODBoost 0
+        prop $ConfigGroup SeasonalBlendTolerance 0.25
+    setting $Medium
+        prop $ConfigGroup TerrainLODBoost 1
+        prop $ConfigGroup SeasonalBlendTolerance 0.07
+    setting $High
+        prop $ConfigGroup TerrainLODBoost 1
+        prop $ConfigGroup SeasonalBlendTolerance 0.02
+end
+if (($cardLevel >= $cardLevelUber) and ($cpuLevel >= $cpuLevelUber))
+    setOption TerrainQuality $High
+elseif (($cardLevel >= $cardLevelHigh) and ($cpuLevel >= $cpuLevelHigh))
+    setOption TerrainQuality $Medium
+else
+    setOption TerrainQuality $Low
+endif
+option EdgeSmoothing
+    setting $Off
+        prop $ConfigGroup FSAALevel 0
+    setting $Low
+        prop $ConfigGroup FSAALevel 2
+    setting $Medium
+        prop $ConfigGroup FSAALevel 4
+    setting $High
+        prop $ConfigGroup FSAALevel 8
+end
+setOption EdgeSmoothing $Off
+option TerrainSlopeScaling
+    setting $Off
+        prop $ConfigGroup TerrainSlopeScalingEnabled 0
+    setting $On
+        prop $ConfigGroup TerrainSlopeScalingEnabled 1
+end
+setOption TerrainSlopeScaling $On
+option SimQuality
+    setting $Low
+        prop $ConfigGroup RenderSimLODDistances "2, 8, 15, 100"
+        prop $ConfigGroup RenderSimTextureSizes "512, 512, 256, 128"
+        prop $ConfigGroup CASSimTextureSize 2048
+        prop $ConfigGroup ThumbnailSimTextureSize 512
+        prop $ConfigGroup CASSinglePassShaderEnabled true
+        prop $ConfigGroup MinSimLOD 0
+        prop $ConfigGroup EnableSimPointLighting false
+        prop $ConfigGroup PhysiqueTextureBlendingOnLot 0
+        if (($vMemoryLevel < $vMemoryLevelHigh) or ($ramLevel < $ramLevelHigh))
+            prop $ConfigGroup SimCacheSizeLimit 20
+        else
+            prop $ConfigGroup SimCacheSizeLimit 35
+        endif
+    setting $Medium
+        prop $ConfigGroup RenderSimLODDistances "5, 25, 75, 150"
+        prop $ConfigGroup RenderSimTextureSizes "1024, 1024, 256, 128"
+        prop $ConfigGroup CASSimTextureSize 2048
+        prop $ConfigGroup ThumbnailSimTextureSize 1024
+        prop $ConfigGroup CASSinglePassShaderEnabled true
+        prop $ConfigGroup MinSimLOD 0
+        prop $ConfigGroup EnableSimPointLighting true
+        prop $ConfigGroup PhysiqueTextureBlendingOnLot 1
+        if (($vMemoryLevel < $vMemoryLevelHigh) or ($ramLevel < $ramLevelHigh))
+            prop $ConfigGroup SimCacheSizeLimit 50
+        elseif ($ramLevel == $ramLevelHigh)
+            prop $ConfigGroup SimCacheSizeLimit 90
+        else
+            prop $ConfigGroup SimCacheSizeLimit 125
+        endif
+    setting $High
+        prop $ConfigGroup RenderSimLODDistances "5, 30, 85, 250"
+        prop $ConfigGroup RenderSimTextureSizes "1024, 1024, 256, 128"
+        prop $ConfigGroup CASSimTextureSize 2048
+        prop $ConfigGroup ThumbnailSimTextureSize 2048
+        prop $ConfigGroup CASSinglePassShaderEnabled false
+        prop $ConfigGroup MinSimLOD 0
+        prop $ConfigGroup EnableSimPointLighting true
+        prop $ConfigGroup PhysiqueTextureBlendingOnLot 1
+        if (($vMemoryLevel < $vMemoryLevelHigh) or ($ramLevel < $ramLevelHigh))
+            prop $ConfigGroup SimCacheSizeLimit 100
+        elseif ($ramLevel == $ramLevelHigh)
+            prop $ConfigGroup SimCacheSizeLimit 175
+        else
+            prop $ConfigGroup SimCacheSizeLimit 250
+        endif
+    setting $VeryHigh
+        prop $ConfigGroup RenderSimLODDistances "25, 50, 100, 1000"
+        prop $ConfigGroup RenderSimTextureSizes "2048, 2048, 512, 128"
+        prop $ConfigGroup CASSimTextureSize 2048
+        prop $ConfigGroup ThumbnailSimTextureSize 2048
+        prop $ConfigGroup CASSinglePassShaderEnabled false
+        prop $ConfigGroup MinSimLOD 0
+        prop $ConfigGroup EnableSimPointLighting true
+        prop $ConfigGroup PhysiqueTextureBlendingOnLot 2
+        if ($vMemoryLevel < $vMemoryLevelHigh or $ramLevel < $ramLevelHigh)
+            prop $ConfigGroup SimCacheSizeLimit 200
+        elseif ($ramLevel == $ramLevelHigh)
+            prop $ConfigGroup SimCacheSizeLimit 350
+        else
+            prop $ConfigGroup SimCacheSizeLimit 512
+        endif
+end
+setProp $ConfigGroup ClipPlaneExponent "1"
+setProp $ConfigGroup ClipPlaneZoomClose "10"
+setProp $ConfigGroup ClipPlaneZoomDistant "75"
+setProp $ConfigGroup FogCurveModifier "1, 3"
+setProp $ConfigGroup ObjectSizeCullFactor "200"
+option ViewDistance
+    setting $Low
+        prop $ConfigGroup ClipPlaneDistances "0.1, 5, 100, 100"
+        prop $ConfigGroup BasementFarPlaneScale 2
+        prop $ConfigGroup FogDistances "70, 70, 98, 98"
+	prop $ConfigGroup SkyboxClipDistances "0.1, 100"
+        prop $ConfigGroup FogDense 1
+	prop $ConfigGroup AllowDistantSkybox 0
+    setting $High
+        prop $ConfigGroup ClipPlaneDistances "0.1, 5, 1000, 1500"
+        prop $ConfigGroup FogDistances "10000, 10, 100000, 3000"
+	prop $ConfigGroup SkyboxClipDistances "10, 5000"
+        prop $ConfigGroup BasementFarPlaneScale 1
+        prop $ConfigGroup FogDense 0
+	prop $ConfigGroup AllowDistantSkybox 1
+end
+option AdvancedRendering
+    setting $Off
+        prop $ConfigGroup RenderForceMinspecShaders 1
+        prop $ConfigGroup TerrainLODMode 0
+        prop $ConfigGroup TerrainSpecScale 0
+        prop $ConfigGroup RenderPostProcessEnabled false
+        prop $ConfigGroup RenderShadowsEnabled false
+        prop $ConfigGroup RenderPretransformEnabled true
+    setting $On
+        prop $ConfigGroup RenderForceMinspecShaders 0
+        prop $ConfigGroup TerrainLODMode 0
+        prop $ConfigGroup TerrainSpecScale 1
+end
+option VerticalSync
+    setting $Off
+        prop $ConfigGroup VerticalSync 0
+    setting $On
+        prop $ConfigGroup VerticalSync 1
+end
+setOption VerticalSync $Off
+option UseHiDpi
+    setting $Off
+        prop $ConfigGroup UseHiDpi 0
+    setting $On
+        prop $ConfigGroup UseHiDpi 1
+end
+setOption UseHiDpi $On
+option UiScale
+    integer 100
+        prop $ConfigGroup UiScale 100
+end
+setOption UiScale 100
+option ResolutionWidth
+    integer 1024
+        prop $ConfigGroup ResolutionWidth 1024
+end
+option ResolutionHeight
+    integer 768
+        prop $ConfigGroup ResolutionHeight 768
+end
+option ResolutionRefresh
+    integer 0
+        prop $ConfigGroup ResolutionRefresh 0
+end
+if ($isLiveEdit or (($isMac == 0) and ($cardLevel == $cardLevelLow)))
+    setOption ResolutionWidth 1024
+    setOption ResolutionHeight 768
+else
+    if (9 * $desktopWidth >= 16 * $desktopHeight)
+        setf n (sqrt($resolutionLevel/(16*9)))
+        setOption ResolutionWidth (floor(16*$n))
+        setOption ResolutionHeight (floor(9*$n))
+    elseif (10 * $desktopWidth >= 16 * $desktopHeight)
+        setf n (sqrt($resolutionLevel/(16*10)))
+        setOption ResolutionWidth (floor(16*$n))
+        setOption ResolutionHeight (floor(10*$n))
+    else
+        setf n (sqrt($resolutionLevel/(4*3)))
+        setOption ResolutionWidth (floor(4*$n))
+        setOption ResolutionHeight (floor(3*$n))
+    endif
+endif
+option SceneResolution
+    setting $Low
+        prop $ConfigGroup PseudoResolutionRatio "5,8"
+    setting $Medium
+        prop $ConfigGroup PseudoResolutionRatio "25,32"
+    setting $High
+        prop $ConfigGroup PseudoResolutionRatio "0,0"
+end
+seti VisualQualityCustom 0
+seti VisualQualityLow 1
+seti VisualQualityLowMedium 2
+seti VisualQualityMedium 3
+seti VisualQualityHigh 4
+seti visualQualityUltra 5
+option VisualQuality
+    setting $VisualQualityCustom
+    setting $VisualQualityLow
+        optionProp SceneResolution $Medium
+        optionProp SimQuality $Low
+        optionProp ObjectQuality $Low
+        optionProp LightingQuality $Low
+        optionProp GeneralReflections $Off
+        optionProp EdgeSmoothing $Off
+        optionProp VisualEffects $Low
+        optionProp ViewDistance $Low
+        optionProp PostProcessing $Off
+        optionProp AdvancedRendering $Off
+        optionProp TerrainSlopeScaling $Off
+    setting $VisualQualityLowMedium
+        optionProp SceneResolution $High
+        optionProp SimQuality $Low
+        optionProp ObjectQuality $Low
+        optionProp LightingQuality $Low
+        optionProp GeneralReflections $Low
+        optionProp EdgeSmoothing $Off
+        optionProp VisualEffects $Low
+        optionProp ViewDistance $High
+        optionProp PostProcessing $Off
+        optionProp AdvancedRendering $On
+        optionProp TerrainSlopeScaling $On
+    setting $VisualQualityMedium
+        optionProp SceneResolution $High
+        optionProp SimQuality $Medium
+        optionProp ObjectQuality $Medium
+        optionProp LightingQuality $Medium
+        optionProp GeneralReflections $Medium
+        optionProp EdgeSmoothing $Off
+        optionProp VisualEffects $Medium
+        optionProp ViewDistance $High
+        optionProp PostProcessing $On
+        optionProp AdvancedRendering $On
+        optionProp TerrainSlopeScaling $On
+    setting $VisualQualityHigh
+        optionProp SceneResolution $High
+        optionProp SimQuality $High
+        if ($vMemoryLevel >= $vMemoryLevelMedium)
+            optionProp ObjectQuality $High
+        else
+            optionProp ObjectQuality $Medium
+        endif
+        optionProp LightingQuality $High
+        optionProp GeneralReflections $High
+        optionProp EdgeSmoothing $Low
+        optionProp VisualEffects $High
+        optionProp ViewDistance $High
+        optionProp PostProcessing $On
+        optionProp AdvancedRendering $On
+        optionProp TerrainSlopeScaling $On
+    setting $visualQualityUltra
+        optionProp SceneResolution $High
+        if ($vMemoryLevel >= $vMemoryLevelMedium)
+            optionProp SimQuality $VeryHigh
+            optionProp ObjectQuality $High
+        else
+            optionProp SimQuality $High
+            optionProp ObjectQuality $Medium
+        endif
+        optionProp LightingQuality $VeryHigh
+        optionProp GeneralReflections $High
+        optionProp EdgeSmoothing $High
+        optionProp VisualEffects $High
+        optionProp ViewDistance $High
+        optionProp PostProcessing $On
+        optionProp AdvancedRendering $On
+        optionProp TerrainSlopeScaling $On
+end
+if ($gpumemLevel == $gpumemLevelLow)
+    if ($cardLevel == $cardLevelLow or $cpuLevel == $cpuLevelLow)
+        setOption VisualQuality $VisualQualityLow
+    else
+        setOption VisualQuality $VisualQualityLowMedium
+    endif
+elseif ($gpumemLevel == $gpumemLevelMedium)
+    if ($cardLevel == $cardLevelLow or $cpuLevel == $cpuLevelLow)
+        setOption VisualQuality $VisualQualityLow
+    elseif ($cardLevel == $cardLevelLowmedium or $ramLevel < $ramLevelMedium)
+        setOption VisualQuality $VisualQualityLowMedium
+    else
+        setOption VisualQuality $VisualQualityMedium
+    endif
+elseif ($gpumemLevel == $gpumemLevelHigh)
+    if ($cardLevel == $cardLevelLow or $cpuLevel == $cpuLevelLow)
+        setOption VisualQuality $VisualQualityLow
+    elseif ($cardLevel == $cardLevelLowmedium)
+        setOption VisualQuality $VisualQualityLowMedium
+    elseif ($cardLevel == $cardLevelMedium or $cpuLevel < $cpuLevelHigh or $ramLevel < $ramLevelHigh)
+        setOption VisualQuality $VisualQualityMedium
+    else
+        setOption VisualQuality $VisualQualityHigh
+    endif
+else
+    if ($cardLevel == $cardLevelLow or $cpuLevel == $cpuLevelLow)
+        setOption VisualQuality $VisualQualityLow
+    elseif ($cardLevel == $cardLevelLowmedium)
+        setOption VisualQuality $VisualQualityLowMedium
+    elseif ($cardLevel == $cardLevelMedium or $cpuLevel == $cpuLevelMedium)
+        setOption VisualQuality $VisualQualityMedium
+    elseif ($cardLevel == $cardLevelHigh)
+        if ($ramLevel <= $ramLevelMedium)
+            setOption VisualQuality $VisualQualityMedium
+        else
+            setOption VisualQuality $VisualQualityHigh
+        endif
+    else
+        if ($ramLevel <= $ramLevelMedium)
+            setOption VisualQuality $VisualQualityMedium
+        elseif ($ramLevel <= $ramLevelHigh)
+            setOption VisualQuality $VisualQualityHigh
+        else
+            setOption VisualQuality $visualQualityUltra
+        endif
+    endif
+endif
+option FullScreen
+    setting $Off
+        prop $ConfigGroup FullScreen 0
+    setting $On
+        prop $ConfigGroup FullScreen 1
+end
+setOption FullScreen $Off
+option WindowedFullScreen
+    setting $Off
+        prop $ConfigGroup WindowedFullScreen 0
+    setting $On
+        prop $ConfigGroup WindowedFullScreen 1
+end
+setOption WindowedFullScreen $Off
+option FrameRateLimit
+    integer 200
+        prop $ConfigGroup FrameRateLimit 200
+end
+setOption FrameRateLimit 200
+option DisableScreensaverInFullscreenMode
+    setting $Off
+        prop $ConfigGroup DisableScreensaverInFullscreenMode 0
+    setting $On
+        prop $ConfigGroup DisableScreensaverInFullscreenMode 1
+end
+setOption DisableScreensaverInFullscreenMode $On
+if ($ramLevel < $ramLevelMedium)
+    seti MemCacheBudgetValue 167772160
+elseif ($ramLevel < $ramLevelHigh)
+    seti MemCacheBudgetValue 209715200
+else
+	if($vMemoryLevel < $vMemoryLevelMedium)
+	    seti MemCacheBudgetValue 209715200
+    elseif(($vMemoryLevel < $vMemoryLevelHigh) or ($ramLevel < $ramLevelUber))
+	    seti MemCacheBudgetValue 314572800
+	else
+	    seti MemCacheBudgetValue 419430400
+	endif
+endif
+setProp $ConfigGroup CacheBudget $MemCacheBudgetValue
+option AudioQuality
+    setting $Low
+        prop $ConfigGroup AudioQuality 1
+    setting $Medium
+        prop $ConfigGroup AudioQuality 2
+    setting $High
+        prop $ConfigGroup AudioQuality 3
+end
+if ($cpuLevel >= $cpuLevelHigh)
+    setOption AudioQuality $High
+elseif (($cpuLevel >= $cpuLevelMedium) and ($cardLevel >= $cardLevelMedium))
+    setOption AudioQuality $Medium
+else
+    setOption AudioQuality $Low
+endif
+seti AudioStereo    1
+seti AudioHeadphone 2
+seti AudioQuad      3
+seti Audio51        4
+seti Audio71        5
+option AudioOutputMode
+    setting $AudioStereo
+        prop $ConfigGroup AudioOutputMode $AudioStereo
+    setting $AudioHeadphone
+        prop $ConfigGroup AudioOutputMode $AudioHeadphone
+    setting $AudioQuad
+        prop $ConfigGroup AudioOutputMode $AudioQuad
+    setting $Audio51
+        prop $ConfigGroup AudioOutputMode $Audio51
+    setting $Audio71
+        prop $ConfigGroup AudioOutputMode $Audio71
+end
+setOption AudioOutputMode $AudioStereo
+option MasterLevel
+    integer 255
+        prop $ConfigGroup MasterLevel 255
+end
+setOption MasterLevel 255
+option VoiceLevel
+    integer 255
+        prop $ConfigGroup VoiceLevel 255
+end
+setOption VoiceLevel 255
+option SoundFXLevel
+    integer 255
+        prop $ConfigGroup SoundFXLevel 255
+end
+setOption SoundFXLevel 255
+option MusicLevel
+    integer 255
+        prop $ConfigGroup MusicLevel 255
+end
+setOption MusicLevel 255
+option MenuMusicLevel
+    integer 255
+        prop $ConfigGroup MenuMusicLevel 255
+end
+setOption MenuMusicLevel 255
+option UISoundSXLevel
+    integer 255
+        prop $ConfigGroup UISoundSXLevel 255
+end
+setOption UISoundSXLevel 255
+option AmbientLevel
+    integer 255
+        prop $ConfigGroup AmbientLevel 255
+end
+setOption AmbientLevel 255
+option FocusMute
+    setting $Off
+        prop $ConfigGroup FocusMute 0
+    setting $On
+        prop $ConfigGroup FocusMute 1
+end
+setOption FocusMute $On
+option MoodChange
+    setting $Off
+        prop $ConfigGroup MoodChange 0
+    setting $On
+        prop $ConfigGroup MoodChange 1
+end
+setOption MoodChange $On
+option VoiceMute
+    setting $Off
+        prop $ConfigGroup VoiceMute 0
+    setting $On
+        prop $ConfigGroup VoiceMute 1
+end
+setOption VoiceMute $Off
+option SoundFXMute
+    setting $Off
+        prop $ConfigGroup SoundFXMute 0
+    setting $On
+        prop $ConfigGroup SoundFXMute 1
+end
+setOption SoundFXMute $Off
+option MusicMute
+    setting $Off
+        prop $ConfigGroup MusicMute 0
+    setting $On
+        prop $ConfigGroup MusicMute 1
+end
+setOption MusicMute $Off
+option UIMute
+    setting $Off
+        prop $ConfigGroup UIMute 0
+    setting $On
+        prop $ConfigGroup UIMute 1
+end
+setOption UIMute $Off
+option AmbientMute
+    setting $Off
+        prop $ConfigGroup AmbientMute 0
+    setting $On
+        prop $ConfigGroup AmbientMute 1
+end
+setOption AmbientMute $Off
+option MatchSpeedStereoMusic
+    setting $Off
+        prop $ConfigGroup MatchSpeedStereoMusic 0
+    setting $On
+        prop $ConfigGroup MatchSpeedStereoMusic 1
+end
+setOption MatchSpeedStereoMusic $On
+option EdgeScrolling
+    setting $Off
+        prop $ConfigGroup EdgeScrolling 0
+    setting $On
+        prop $ConfigGroup EdgeScrolling 1
+end
+setOption EdgeScrolling $On
+option EdgeScrollingWarning
+    setting $Off
+        prop $ConfigGroup EdgeScrollingWarning 0
+    setting $On
+        prop $ConfigGroup EdgeScrollingWarning 1
+end
+setOption EdgeScrollingWarning $On
+option EnableTelemetry
+    setting $Off
+        prop $ConfigGroup EnableTelemetry 0
+    setting $On
+        prop $ConfigGroup EnableTelemetry 1
+end
+setOption EnableTelemetry $On
+option InvertHorizontalRotation
+    setting $Off
+        prop $ConfigGroup InvertHorizontalRotation 0
+    setting $On
+        prop $ConfigGroup InvertHorizontalRotation 1
+end
+setOption InvertHorizontalRotation $Off
+option InvertVerticalRotation
+    setting $Off
+        prop $ConfigGroup InvertVerticalRotation 0
+    setting $On
+        prop $ConfigGroup InvertVerticalRotation 1
+end
+setOption InvertVerticalRotation $Off
+option FPInvertHorizontalRotation
+    setting $Off
+        prop $ConfigGroup FPInvertHorizontalRotation 0
+    setting $On
+        prop $ConfigGroup FPInvertHorizontalRotation 1
+end
+setOption FPInvertHorizontalRotation $Off
+option FPInvertVerticalRotation
+    setting $Off
+        prop $ConfigGroup FPInvertVerticalRotation 0
+    setting $On
+        prop $ConfigGroup FPInvertVerticalRotation 1
+end
+setOption FPInvertVerticalRotation $Off
+option FPDisableCameraBob
+    setting $Off
+        prop $ConfigGroup FPDisableCameraBob 0
+    setting $On
+        prop $ConfigGroup FPDisableCameraBob 1
+end
+setOption FPDisableCameraBob $Off
+option AdvancedCamera
+    setting $Off
+        prop $ConfigGroup AdvancedCamera 0
+    setting $On
+        prop $ConfigGroup AdvancedCamera 1
+end
+setOption AdvancedCamera $Off
+option CameraSpeed
+	integer 100
+		prop $ConfigGroup CameraSpeed 100
+end
+setOption CameraSpeed 100
+option FPCameraSpeed
+	integer 100
+		prop $ConfigGroup FPCameraSpeed 100
+end
+setOption FPCameraSpeed 100
+option CursorSpeed
+	integer 100
+		prop $ConfigGroup CursorSpeed 100
+end
+setOption CursorSpeed 100
+option CursorAcceleration
+	integer 100
+		prop $ConfigGroup CursorAcceleration 100
+end
+setOption CursorAcceleration 100
+option ScreenshotPostUI
+    setting $Off
+	    prop $ConfigGroup ScreenshotPostUI 0
+    setting $On
+        prop $ConfigGroup ScreenshotPostUI 1
+end
+setOption ScreenshotPostUI $Off
+seti VidSizeLow 0
+seti VidSizeMedium 1
+seti VidSizeLarge 2
+option VideoCaptureSize
+    setting $VidSizeLow
+        prop $ConfigGroup VideoCaptureSize 0
+    setting $VidSizeMedium
+        prop $ConfigGroup VideoCaptureSize 1
+    setting $VidSizeLarge
+        prop $ConfigGroup VideoCaptureSize 2
+end
+setOption VideoCaptureSize $VidSizeMedium
+seti VidQualityLow 0
+seti VidQualityMedium 1
+seti VidQualityHigh 2
+seti VidQualityUncompressed 3
+option VideoCaptureQuality
+    setting $VidQualityLow
+        prop $ConfigGroup VideoCaptureQuality 0
+    setting $VidQualityMedium
+        prop $ConfigGroup VideoCaptureQuality 1
+    setting $VidQualityHigh
+        prop $ConfigGroup VideoCaptureQuality 2
+    setting $VidQualityUncompressed
+        prop $ConfigGroup VideoCaptureQuality 3
+end
+setOption VideoCaptureQuality $VidQualityHigh
+seti VidSoundDisabled 0
+seti VidSoundEnabled 1
+option VideoCaptureSound
+    setting $VidSoundDisabled
+        prop $ConfigGroup VideoCaptureSound 0
+    setting $VidSoundEnabled
+        prop $ConfigGroup VideoCaptureSound 1
+end
+setOption VideoCaptureSound $VidSoundEnabled
+option VideoCaptureTime
+    integer 0
+        prop $ConfigGroup VideoCaptureTime 0
+end
+setOption VideoCaptureTime 0
+seti VidHideUIDisable 0
+seti VidHideUIEnable 1
+option VideoCaptureHideUI
+    setting $VidHideUIDisable
+        prop $ConfigGroup VideoCaptureHideUI 0
+    setting $VidHideUIEnable
+        prop $ConfigGroup VideoCaptureHideUI 1
+end
+setOption VideoCaptureHideUI $VidHideUIEnable
+seti AutonomyLevelDisabled 0
+seti AutonomyLevelLimited 1
+seti AutonomyLevelMedium 2
+seti AutonomyLevelFull 3
+option AutonomyHousehold
+    setting $AutonomyLevelLimited
+        prop $ConfigGroup AutonomyHousehold 1
+    setting $AutonomyLevelFull
+        prop $ConfigGroup AutonomyHousehold 3
+end
+setOption AutonomyHousehold $AutonomyLevelFull
+option AutonomyDisabledForActiveSim
+    setting $Off
+        prop $ConfigGroup AutonomyDisabledForActiveSim 0
+    setting $On
+        prop $ConfigGroup AutonomyDisabledForActiveSim 1
+end
+setOption AutonomyDisabledForActiveSim $Off
+seti SimLifeSpanShort 0
+seti SimLifeSpanNormal 1
+seti SimLifeSpanLong 2
+option SimsSetAgeSpeed
+    setting $SimLifeSpanShort
+        prop $ConfigGroup SimsSetAgeSpeed 0
+    setting $SimLifeSpanNormal
+        prop $ConfigGroup SimsSetAgeSpeed 1
+    setting $SimLifeSpanLong
+        prop $ConfigGroup SimsSetAgeSpeed 2
+end
+setOption SimsSetAgeSpeed $SimLifeSpanNormal
+seti SimAgeDisabled 0
+seti SimAgeEnabled 1
+seti SimActiveFamilyEnabled 2
+option SimsSetAgingEnabled
+	setting $SimAgeDisabled
+		prop $ConfigGroup SimAgeDisabled 0
+	setting $SimAgeEnabled
+		prop $ConfigGroup SimAgeEnabled 1
+	setting $SimActiveFamilyEnabled
+		prop $ConfigGroup SimActiveFamilyEnabled 2
+end
+setOption SimsSetAgingEnabled $SimActiveFamilyEnabled
+option TradSocialMenuEnabled
+    setting $Off
+        prop $ConfigGroup TradSocialMenuEnabled 0
+    setting $On
+        prop $ConfigGroup TradSocialMenuEnabled 1
+end
+setOption TradSocialMenuEnabled $Off
+option MemoriesHelperEnabled
+    setting $Off
+        prop $ConfigGroup MemoriesHelperEnabled 0
+    setting $On
+        prop $ConfigGroup MemoriesHelperEnabled 1
+end
+setOption MemoriesHelperEnabled $On
+option AutoAgeUnplayed
+    setting $Off
+        prop $ConfigGroup AutoAgeUnplayed 0
+    setting $On
+        prop $ConfigGroup AutoAgeUnplayed 1
+end
+setOption AutoAgeUnplayed $On
+option NPCReplacement
+	setting $Off
+        prop $ConfigGroup NPCReplacement 0
+	setting $On
+		prop $ConfigGroup NPCReplacement 1
+end
+setOption NPCReplacement $On
+option TutorialEnabled
+    setting $Off
+        prop $ConfigGroup TutorialEnabled 0
+    setting $On
+        prop $ConfigGroup TutorialEnabled 1
+end
+setOption TutorialEnabled $On
+seti MaxProtectedSimsUnlimited        3
+seti MaxProtectedSimsUnlimitedCount   0
+seti MaxProtectedSimsHigh             2
+seti MaxProtectedSimsHighCount        200
+seti MaxProtectedSimsMedium           1
+seti MaxProtectedSimsMediumCount      150
+seti MaxProtectedSimsLow              0
+seti MaxProtectedSimsLowCount         80
+option MaxProtectedSims
+    setting $MaxProtectedSimsLow
+        prop $ConfigGroup MaxProtectedSimCount $MaxProtectedSimsLowCount
+    setting $MaxProtectedSimsMedium
+        prop $ConfigGroup MaxProtectedSimCount $MaxProtectedSimsMediumCount
+    setting $MaxProtectedSimsHigh
+        prop $ConfigGroup MaxProtectedSimCount $MaxProtectedSimsHighCount
+    setting $MaxProtectedSimsUnlimited
+        prop $ConfigGroup MaxProtectedSimCount $MaxProtectedSimsUnlimitedCount
+end
+if ((($adjustedMemory >= $ramLevelHigh) and ($cpuLevel >= $cpuLevelUber)) and ($vMemoryLevel >= $vMemoryLevelHigh))
+    setProp $ConfigGroup MaxRecommendedProtectedSims $MaxProtectedSimsHigh
+    setOption MaxProtectedSims $MaxProtectedSimsMedium
+elseif ((($adjustedMemory >= $ramLevelMedium) and ($cpuLevel >= $cpuLevelMedium)) and ($vMemoryLevel >= $vMemoryLevelHigh))
+    setProp $ConfigGroup MaxRecommendedProtectedSims $MaxProtectedSimsMedium
+    setOption MaxProtectedSims $MaxProtectedSimsLow
+else
+    setProp $ConfigGroup MaxRecommendedProtectedSims $MaxProtectedSimsLow
+    setOption MaxProtectedSims $MaxProtectedSimsLow
+endif
+seti SeasonLengthNormal 0
+seti SeasonLengthLong 1
+seti SeasonLengthVeryLong 2
+option SeasonLength
+	setting $SeasonLengthNormal
+		prop $ConfigGroup SeasonLengthNormal 0
+	setting $SeasonLengthLong
+		prop $ConfigGroup SeasonLengthLong 1
+	setting $SeasonLengthVeryLong
+		prop $ConfigGroup SeasonLengthVeryLong 2
+end
+setOption SeasonLength $SeasonLengthNormal
+seti WeatherEnabled 0
+seti WeatherStormsDisabled 1
+seti WeatherDisabled 2
+option RainOptions
+	setting $WeatherEnabled
+		prop $ConfigGroup WeatherEnabled 0
+	setting $WeatherStormsDisabled
+		prop $ConfigGroup WeatherStormsDisabled 1
+	setting $WeatherDisabled
+		prop $ConfigGroup WeatherDisabled 2
+end
+setOption RainOptions $WeatherEnabled
+option SnowOptions
+	setting $WeatherEnabled
+		prop $ConfigGroup WeatherEnabled 0
+	setting $WeatherStormsDisabled
+		prop $ConfigGroup WeatherStormsDisabled 1
+	setting $WeatherDisabled
+		prop $ConfigGroup WeatherDisabled 2
+end
+setOption SnowOptions $WeatherEnabled
+option TemperatureEffects
+    setting $Off
+        prop $ConfigGroup TemperatureEffects 0
+    setting $On
+        prop $ConfigGroup TemperatureEffects 1
+end
+setOption TemperatureEffects $On
+option FameStartSimsOptedOut
+    setting $Off
+        prop $ConfigGroup FameStartSimsOptedOut 0
+    setting $On
+        prop $ConfigGroup FameStartSimsOptedOut 1
+end
+setOption FameStartSimsOptedOut $Off
+option ShowWhims
+    setting $Off
+        prop $ConfigGroup ShowWhims 0
+    setting $On
+        prop $ConfigGroup ShowWhims 1
+end
+setOption ShowWhims $Off
+option ShowModListStartup
+    setting $Off
+        prop $ConfigGroup ShowModListStartup 0
+    setting $On
+        prop $ConfigGroup ShowModListStartup 1
+end
+setOption ShowModListStartup $On
+option ModsDisabled
+    setting $Off
+        prop $ConfigGroup ModsDisabled 0
+    setting $On
+        prop $ConfigGroup ModsDisabled 1
+end
+setOption ModsDisabled $Off
+option ScriptModsEnabled
+    setting $Off
+        prop $ConfigGroup ScriptModsEnabled 0
+    setting $On
+        prop $ConfigGroup ScriptModsEnabled 1
+end
+setOption ScriptModsEnabled $Off
+option ShowOnlineNotifications
+    setting $Off
+        prop $ConfigGroup ShowOnlineNotifications 0
+    setting $On
+        prop $ConfigGroup ShowOnlineNotifications 1
+end
+setOption ShowOnlineNotifications $On
+option AutoReconnect
+	setting $Off
+		prop $ConfigGroup AutoReconnect 0
+	setting $On
+		prop $ConfigGroup AutoReconnect 1
+end
+setOption AutoReconnect $On
+option OnlineAccess
+	setting $Off
+		prop $ConfigGroup OnlineAccess 0
+	setting $On
+		prop $ConfigGroup OnlineAccess 1
+end
+setOption OnlineAccess $On
+option DisableComments
+	setting $Off
+		prop $ConfigGroup DisableComments 0
+	setting $On
+		prop $ConfigGroup DisableComments 1
+end
+setOption DisableComments $Off
+option HideReportedContent
+	setting $Off
+		prop $ConfigGroup HideReportedContent 0
+	setting $On
+		prop $ConfigGroup HideReportedContent 1
+end
+setOption HideReportedContent $Off
+option AnimaticPack
+	integer 1000
+		prop $ConfigGroup AnimaticPack 1000
+end
+setOption AnimaticPack 1000
+option SurveysEnabled
+    setting $Off
+        prop $ConfigGroup SurveysEnabled 0
+    setting $On
+        prop $ConfigGroup SurveysEnabled 1
+end
+setOption SurveysEnabled $On
+option MuteTutorialNarration
+    setting $Off
+        prop $ConfigGroup MuteTutorialNarration 0
+    setting $On
+        prop $ConfigGroup MuteTutorialNarration 1
+end
+setOption MuteTutorialNarration $Off
+option EnableFTUETutorialStart
+    setting $Off
+        prop $ConfigGroup EnableFTUETutorialStart 0
+    setting $On
+        prop $ConfigGroup EnableFTUETutorialStart 1
+end
+setOption EnableFTUETutorialStart $On
+if ($configParserErrorCode == 0)
+    seti configParserErrorCode 1
+endif
+logSystemInfo "=== Application info ==="
+logSystemInfo "Name:            ${appName}"
+logSystemInfo "Version:         ${version}"
+logSystemInfo "Build:           ${buildType}"
+logSystemInfo "=== Rating info ==="
+logSysteminfo "GPU: ${cardLevel} GPU Memory: ${gpumemLevel} CPU: ${cpuLevel} RAM: ${ramLevel} CPU Speed: ${cpuSpeed} Threading: ${threadLevel}"
+logSysteminfo "Adjusted CPU: ${adjustedCPU} RAM: ${memory} Adjusted RAM: ${adjustedMemory} Cores: ${cpuCount}"
+logSystemInfo "=== Machine info ==="
+logSystemInfo "OS version:      ${osVersion}"
+if ($osMajorVersion >= 6)
+    logSystemInfo "OS prod type:    ${osProductType}"
+endif
+logSystemInfo "OS major ver:    ${osMajorVersion}"
+logSystemInfo "OS minor ver:    ${osMinorVersion}"
+logSystemInfo "OS SP major ver: ${osServicePackMajorVersion}"
+logSystemInfo "OS SP minor ver: ${osServicePackMinorVersion}"
+logSystemInfo "OS is 64Bit:     ${os64Bit}"
+logSystemInfo "CPU:             ${cpu}"
+logSystemInfo "    Brand:       ${cpuBrand}"
+logSystemInfo "    Family:      ${cpuFamily}"
+logSystemInfo "    Model:       ${cpuModel}"
+logSystemInfo "    Cores:       ${cpuCount}"
+logSystemInfo "    HT:          ${hyperthreading}"
+logSystemInfo "    x64:         ${cpuArchitecture}"
+logSystemInfo "Memory:          ${memory}MB"
+logSystemInfo "Free memory:     ${freeMemory}MB"
+logSystemInfo "VA space:        ${virtualMemory}MB"
+logSystemInfo "User:            ${userName}"
+logSystemInfo "Computer:        ${computerName}"
+logSystemInfo "=== Graphics device info ==="
+logSystemInfo "Number:          ${deviceNumber}"
+logSystemInfo "Name (driver):   ${cardNameText}"
+logSystemInfo "Name (database): ${cardName} [Found: ${isCardFound}, Supported: ${isCardSupported}]"
+logSystemInfo "Vendor:          ${cardVendor}"
+logSystemInfo "Chipset:         ${cardChipset}"
+logSystemInfo "Driver:          ${driverName}, Version: ${driverVersion}"
+logSystemInfo "Driver version:  ${driverBuild}"
+logSystemInfo "Monitor:         ${monitorName}"
+if ($textureMemorySizeOK)
+    logSystemInfo "Texture memory:  ${textureMemory}MB"
+else
+    logSystemInfo "Texture memory:  ${textureMemory}MB <<OVERRIDE>>"
+endif
+logSystemInfo "Vertex program:  ${vsMajor}.${vsMinor}"
+logSystemInfo "Pixel program:   ${psMajor}.${psMinor}"
+logSystemInfo "Hardware TnL:    ${hwTnL}"
+logSystemInfo "Opt. features:   ${optionalGraphicsFeatures}"
+log "Finished Config File"
+
+#<
+ xa37dd45ffe100bfffcc9753aabac325f07cb3fa231144fe2e33ae4783feead2b8a73ff021fac326df0ef9753ab9cdf6573ddff0312fab0b0ff39779eaff312a4f5de65892ffee33a44569bebf21f66d22e54a22347efd375981188743afd99baacc342d88a99321235798725fedcbf43252669dade32415fee89da543bf23d4ex
+#>

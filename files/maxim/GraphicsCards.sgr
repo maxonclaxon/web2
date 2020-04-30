@@ -1,0 +1,1726 @@
+vendor "ATI" 0x1002
+    card 0x15DD "AMD Vega 11" $cardLevelUber $resolutionHigh
+    card 0x6863 "AMD Vega FE" $cardLevelUber $resolutionHigh
+    card 0x687F "AMD Vega 64 and 56" $cardLevelUber $resolutionHigh
+    card 0x67DF "AMD Radeon R9 480, 570, and 580" $cardLevelUber $resolutionHigh
+    card 0x67FF "AMD Radeon R9 560 4GB" $cardLevelUber $resolutionHigh
+    card 0x67EF "AMD Radeon R9 450 and 460" $cardLevelUber $resolutionHigh
+    card 0x7300 "AMD Radeon R9 Fury X" $cardLevelUber $resolutionHigh
+    card 0x67B1 "AMD Radeon R9 390 and 200 Series" $cardLevelUber $resolutionHigh
+    card 0x6939 "AMD Radeon R9 380" $cardLevelUber $resolutionHigh
+    card 0x6810 "AMD Radeon R9 370 and 8800 Series" $cardLevelUber $resolutionHigh
+    card 0x665C "AMD Radeon R9 360" $cardLevelMedium $resolutionHigh
+    card 0x6938 "AMD Radeon HD R295X" $cardLevelUber $resolutionHigh
+    card 0x67B0 "AMD Radeon HD R290 X2" $cardLevelUber $resolutionHigh
+    card 0x6646 "AMD Radeon HD R280 X" $cardLevelUber $resolutionHigh
+    card 0x67B9 "AMD Radeon HD R280" $cardLevelUber $resolutionHigh
+    card 0x6835 "AMD Radeon R9 255" $cardLevelHigh $resolutionHigh
+    card 0x6658 "AMD Radeon R7 200 Series" $cardLevelHigh $resolutionHigh
+    card 0x6610 "AMD Radeon R7 200 Series" $cardLevelHigh $resolutionHigh
+    card 0x67b8 "HAWAII XT" $cardLevelUber $resolutionHigh
+    card 0x6801 "AMD Radeon(TM) HD8970M" $cardLevelHigh $resolutionHigh
+    card 0x6820 "AMD Radeon HD 8800M Series" $cardLevelHigh $resolutionHigh
+    card 0x6821 "AMD Radeon HD 8800M Series" $cardLevelHigh $resolutionHigh
+    card 0x6823 "AMD Radeon HD 8800M Series" $cardLevelHigh $resolutionHigh
+    card 0x682B "AMD Radeon HD 8800M Series" $cardLevelHigh $resolutionHigh
+    card 0x6606 "AMD Radeon HD 8790M" $cardLevelMedium $resolutionMedium
+    card 0x6600 "AMD Radeon HD 8600/8700M" $cardLevelMedium $resolutionMedium
+    card 0x6601 "AMD Radeon (TM) HD 8500M/8700M" $cardLevelMedium $resolutionMedium
+    card 0x6610 "AMD Radeon HD 8500/8600 Series" $cardLevelMedium $resolutionMedium
+    card 0x6611 "AMD Radeon HD 8500/8600 Series" $cardLevelMedium $resolutionMedium
+    card 0x6613 "AMD Radeon HD 8500/8600 Series" $cardLevelMedium $resolutionMedium
+    card 0x990C "AMD Radeon HD 8670D" $cardLevelMedium $resolutionMedium
+    card 0x990B "AMD Radeon HD 8650G" $cardLevelMedium $resolutionMedium
+    card 0x990F "AMD Radeon HD 8610G" $cardLevelMedium $resolutionMedium
+    card 0x6660 "AMD Radeon HD 8600M Series" $cardLevelMedium $resolutionMedium
+    card 0x990D "AMD Radeon HD 8550G" $cardLevelMedium $resolutionMedium
+    card 0x990E "AMD Radeon HD 8570D" $cardLevelMedium $resolutionMedium
+    card 0x6607 "AMD Radeon (TM) HD8530M" $cardLevelMedium $resolutionMedium
+    card 0x9999 "AMD Radeon HD 8510G" $cardLevelMedium $resolutionMedium
+    card 0x6663 "AMD Radeon HD 8500M Series" $cardLevelMedium $resolutionMedium
+    card 0x6771 "AMD Radeon(TM) HD8490" $cardLevelMedium $resolutionMedium
+    card 0x9996 "AMD Radeon HD 8470D" $cardLevelMedium $resolutionLow
+    card 0x9995 "AMD Radeon HD 8450G" $cardLevelMedium $resolutionLow
+    card 0x999A "AMD Radeon HD 8410G" $cardLevelMedium $resolutionLow
+    card 0x9830 "AMD Radeon HD 8400" $cardLevelLow $resolutionLow
+    card 0x9831 "AMD Radeon HD 8400E" $cardLevelLow $resolutionLow
+    card 0x9998 "AMD Radeon HD 8370D" $cardLevelLow $resolutionLow
+    card 0x9997 "AMD Radeon HD 8350G" $cardLevelLow $resolutionLow
+    card 0x9832 "AMD Radeon HD 8330" $cardLevelLow $resolutionLow
+    card 0x9833 "AMD Radeon HD 8330E" $cardLevelLow $resolutionLow
+    card 0x999B "AMD Radeon HD 8310G" $cardLevelLow $resolutionLow
+    card 0x9836 "AMD Radeon HD 8280" $cardLevelLow $resolutionLow
+    card 0x9837 "AMD Radeon HD 8280E" $cardLevelLow $resolutionLow
+    card 0x983D "AMD Radeon HD 8250" $cardLevelLow $resolutionLow
+    card 0x9838 "AMD Radeon HD 8240" $cardLevelLow $resolutionLow
+    card 0x9834 "AMD Radeon HD 8210" $cardLevelLow $resolutionLow
+    card 0x9835 "AMD Radeon HD 8210E" $cardLevelLow $resolutionLow
+    card 0x9839 "AMD Radeon HD 8180" $cardLevelLow $resolutionLow
+    card 0x6920 "AMD Radeon(TM) R9 M395 Graphics" $cardLevelMedium $resolutionHigh
+    card 0x1309 "AMD Radeon(TM) R7 Graphics" $cardLevelMedium $resolutionHigh
+    card 0x130C "AMD Radeon(TM) R7 Graphics" $cardLevelMedium $resolutionHigh
+    card 0x130f "AMD Radeon(TM) R7 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x1313 "AMD Radeon(TM) R7 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x6900 "AMD Radeon(TM) R7 M260" $cardLevelMedium $resolutionMedium
+    card 0x665F "AMD Radeon(TM) R7 M360" $cardLevelMedium $resolutionMedium
+    card 0x6604 "AMD Radeon(TM) R7 M265" $cardLevelLow $resolutionLow
+    card 0x130a "AMD Radeon(TM) R6 Graphics" $cardLevelLow $resolutionLow
+    card 0x6901 "AMD Radeon(TM) R5 M255" $cardLevelLow $resolutionLow
+    card 0x665d "AMD Radeon R7 200 Series" $cardLevelHigh $resolutionHigh
+    card 0x130D "AMD Radeon R6 200 Series" $cardLevelLow $resolutionLow
+    card 0x9874 "AMD Radeon R6 Series" $cardLevelLow $resolutionLow
+    card 0x666f "AMD Radeon R5 M230" $cardLevelMedium $resolutionMedium
+    card 0x6665 "AMD Radeon R5 M230" $cardLevelMedium $resolutionMedium
+    card 0x1318 "AMD Radeon R5" $cardLevelMedium $resolutionMedium
+    card 0x1315 "AMD Radeon R5" $cardLevelMedium $resolutionMedium
+    card 0x6664 "AMD Radeon R5 M200 Series" $cardLevelLow $resolutionLow
+    card 0x6811 "AMD Radeon R9 200 Series" $cardLevelUber $resolutionHigh
+    card 0x6939 "AMD Radeon R9 200 Series" $cardLevelUber $resolutionHigh
+    card 0x9851 "AMD Radeon R4 Graphics" $cardLevelLowmedium $resolutionLow
+    card 0x98e4 "AMD Radeon R4 Graphics" $cardLevelLowmedium $resolutionLow
+    card 0x9850 "AMD Radeon R3 Graphics" $cardLevelLow $resolutionLow
+    card 0x9854 "AMD Radeon R3 Graphics" $cardLevelLow $resolutionLow
+    card 0x9852 "AMD Radeon R2 Graphics" $cardLevelLow $resolutionLow
+    card 0x9853 "AMD Radeon R2 Graphics" $cardLevelLow $resolutionLow
+    card 0x6649 "AMD Radeon HD 7970" $cardLevelHigh $resolutionHigh
+    card 0x6650 "AMD Radeon HD 7970" $cardLevelHigh $resolutionHigh
+    card 0x6651 "AMD Radeon HD 7970" $cardLevelHigh $resolutionHigh
+    card 0x6798 "AMD Radeon HD 7900 Series" $cardLevelUber $resolutionHigh
+    card 0x6799 "AMD Radeon HD 7900 Series" $cardLevelUber $resolutionHigh
+    card 0x679A "AMD Radeon HD 7900 Series" $cardLevelUber $resolutionHigh
+    card 0x679B "AMD Radeon HD 7900 Series" $cardLevelUber $resolutionHigh
+    card 0x6790 "7900 MOD - AMD Radeon HD 7900 GHz Series" $cardLevelUber $resolutionHigh
+    card 0x6800 "AMD Radeon HD 7970M" $cardLevelUber $resolutionHigh
+    card 0x6818 "AMD Radeon HD 7800 Series" $cardLevelUber $resolutionHigh
+    card 0x6819 "AMD Radeon HD 7800 Series" $cardLevelUber $resolutionHigh
+    card 0x679E "AMD Radeon HD 7800 Series" $cardLevelUber $resolutionHigh
+    card 0x6825 "AMD Radeon HD 7800M Series" $cardLevelHigh $resolutionHigh
+    card 0x6827 "AMD Radeon HD 7800M Series" $cardLevelHigh $resolutionHigh
+    card 0x6837 "AMD Radeon HD7700 Series" $cardLevelUber $resolutionHigh
+    card 0x682F "AMD Radeon HD 7700 Series" $cardLevelHigh $resolutionHigh
+    card 0x683D "AMD Radeon HD 7700 Series" $cardLevelHigh $resolutionHigh
+    card 0x683F "AMD Radeon HD 7700 Series" $cardLevelHigh $resolutionHigh
+    card 0x682D "AMD Radeon HD 7700M Series" $cardLevelMedium $resolutionMedium
+    card 0x6831 "AMD Radeon HD 7700M Series" $cardLevelMedium $resolutionMedium
+    card 0x9903 "AMD Radeon HD 7640G" $cardLevelMedium $resolutionMedium
+    card 0x9913 "AMD Radeon HD 7640G" $cardLevelMedium $resolutionMedium
+    card 0x9901 "AMD Radeon HD 7660D" $cardLevelMedium $resolutionMedium
+    card 0x9900 "AMD Radeon HD 7660G" $cardLevelMedium $resolutionMedium
+    card 0x9910 "AMD Radeon HD 7660G" $cardLevelMedium $resolutionMedium
+    card 0x9907 "AMD Radeon HD 7620G" $cardLevelMedium $resolutionMedium
+    card 0x9917 "AMD Radeon HD 7620G" $cardLevelMedium $resolutionMedium
+    card 0x9918 "AMD Radeon HD 7600G" $cardLevelMedium $resolutionMedium
+    card 0x6840 "AMD Radeon HD 7600 Series" $cardLevelMedium $resolutionHigh
+    card 0x6841 "AMD Radeon HD 7600 Series" $cardLevelMedium $resolutionHigh
+    card 0x6843 "AMD Radeon HD 7600 Series" $cardLevelMedium $resolutionHigh
+    card 0x675B "AMD Radeon HD 7600 Series" $cardLevelMedium $resolutionHigh
+    card 0x9908 "AMD Radeon HD 7600G" $cardLevelMedium $resolutionMedium
+    card 0x6751 "AMD Radeon HD 7600A Series" $cardLevelMedium $resolutionMedium
+    card 0x6742 "AMD Radeon HD 7500/7600 Series" $cardLevelMedium $resolutionMedium
+    card 0x9990 "AMD Radeon HD 7520G" $cardLevelMedium $resolutionMedium
+    card 0x9991 "AMD Radeon HD 7540D" $cardLevelMedium $resolutionMedium
+    card 0x9904 "AMD Radeon HD 7560D" $cardLevelMedium $resolutionMedium
+    card 0x99A0 "AMD Radeon HD 7520G" $cardLevelMedium $resolutionMedium
+    card 0x9919 "AMD Radeon HD 7500G" $cardLevelMedium $resolutionMedium
+    card 0x990A "AMD Radeon HD 7500G" $cardLevelMedium $resolutionMedium
+    card 0x6850 "AMD Radeon HD 7500 Series" $cardLevelMedium $resolutionMedium
+    card 0x675d "AMD Radeon HD 7500 Series" $cardLevelMedium $resolutionMedium
+    card 0x6858 "AMD Radeon HD 7500 Series" $cardLevelMedium $resolutionMedium
+    card 0x9993 "AMD Radeon HD 7480D" $cardLevelMedium $resolutionMedium
+    card 0x99A2 "AMD Radeon HD 7420G" $cardLevelMedium $resolutionMedium
+    card 0x9992 "AMD Radeon HD 7420G" $cardLevelMedium $resolutionMedium
+    card 0x9994 "AMD Radeon HD 7400G" $cardLevelMedium $resolutionMedium
+    card 0x6859 "AMD Radeon HD 7400 Series" $cardLevelMedium $resolutionMedium
+    card 0x6849 "AMD Radeon HD 7400 Series" $cardLevelMedium $resolutionMedium
+    card 0x6772 "AMD Radeon HD 7400 Series" $cardLevelMedium $resolutionMedium
+    card 0x677b "AMD Radeon HD 7400 Series" $cardLevelMedium $resolutionMedium
+    card 0x99A4 "AMD Radeon HD 7400G" $cardLevelMedium $resolutionMedium
+    card 0x68FA "AMD Radeon HD 7350" $cardLevelMedium $resolutionLow
+    card 0x9808 "AMD Radeon HD 7340 Graphics" $cardLevelMedium $resolutionLow
+    card 0x9809 "AMD Radeon HD 7310 Graphics" $cardLevelMedium $resolutionLow
+    card 0x980A "AMD Radeon HD 7290 Graphics" $cardLevelMedium $resolutionLow
+    card 0x6778 "AMD Radeon HD 7000 Series" $cardLevelMedium $resolutionLow
+    card 0x6842 "AMD Radeon HD 7000M Series" $cardLevelMedium $resolutionLow
+    card 0x671F "AMD Radeon HD 6900 Series" $cardLevelHigh $resolutionHigh
+    card 0x6720 "AMD Radeon HD 6900M Series" $cardLevelHigh $resolutionHigh
+    card 0x6718 "AMD Radeon HD 6900 Series" $cardLevelHigh $resolutionHigh
+    card 0x6719 "AMD Radeon HD 6900 Series" $cardLevelHigh $resolutionHigh
+    card 0x671C "ATI Radeon Graphics Processor" $cardLevelHigh $resolutionHigh
+    card 0x671D "ATI Radeon Graphics Processor" $cardLevelHigh $resolutionHigh
+    card 0x689B "AMD Radeon HD 6800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68A8 "AMD Radeon HD 6800M Series" $cardLevelHigh $resolutionMedium
+    card 0x6738 "AMD Radeon HD 6800 Series" $cardLevelHigh $resolutionHigh
+    card 0x6739 "AMD Radeon HD 6800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68BA "AMD Radeon HD 6700 Series" $cardLevelHigh $resolutionHigh
+    card 0x673E "AMD Radeon HD 6700 Series" $cardLevelHigh $resolutionHigh
+    card 0x68BF "AMD Radeon HD 6700 Series" $cardLevelHigh $resolutionHigh
+    card 0x6740 "AMD Radeon HD 6700M Series" $cardLevelHigh $resolutionMedium
+    card 0x6743 "AMD Radeon E6760" $cardLevelHigh $resolutionHigh
+    card 0x6741 "AMD Radeon 6600M and 6700M Series" $cardLevelHigh $resolutionMedium
+    card 0x6763 "AMD Radeon E6460" $cardLevelMedium $resolutionMedium
+    card 0x9641 "AMD Radeon HD 6620G" $cardLevelMedium $resolutionMedium
+    card 0x68C0 "AMD Radeon HD 6570M/5700 Series" $cardLevelMedium $resolutionMedium
+    card 0x964A "AMD Radeon HD 6530D" $cardLevelMedium $resolutionMedium
+    card 0x9640 "AMD Radeon HD 6550D" $cardLevelMedium $resolutionMedium
+    card 0x9647 "AMD Radeon HD 6520G" $cardLevelMedium $resolutionMedium
+    card 0x6779 "AMD Radeon HD 6450" $cardLevelMedium $resolutionMedium
+    card 0x9649 "AMD Radeon(TM) HD 6480G" $cardLevelMedium $resolutionMedium
+    card 0x9648 "AMD Radeon HD 6480G" $cardLevelMedium $resolutionMedium
+    card 0x6761 "AMD Radeon HD 6430M" $cardLevelMedium $resolutionMedium
+    card 0x9644 "AMD Radeon HD 6410D" $cardLevelMedium $resolutionMedium
+    card 0x9645 "AMD Radeon HD 6410D" $cardLevelMedium $resolutionMedium
+    card 0x6760 "AMD Radeon HD 6400M Series" $cardLevelMedium $resolutionMedium
+    card 0x9642 "AMD Radeon HD 6370D" $cardLevelMedium $resolutionMedium
+    card 0x9643 "AMD Radeon HD 6380G" $cardLevelMedium $resolutionMedium
+    card 0x9802 "AMD Radeon HD 6310 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x9806 "AMD Radeon HD 6320 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x9803 "AMD Radeon HD 6250 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x9804 "AMD Radeon HD 6250 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x9805 "AMD Radeon HD 6250 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x9807 "AMD Radeon HD 6290 Graphics" $cardLevelMedium $resolutionMedium
+    card 0x68E4 "AMD Radeon HD 6300M Series" $cardLevelMedium $resolutionMedium
+    card 0x68E5 "AMD Radeon HD 6300M Series" $cardLevelMedium $resolutionMedium
+    card 0x6758 "AMD Radeon HD 6600 series" $cardLevelMedium $resolutionMedium
+    card 0x6759 "AMD Radeon HD 6500" $cardLevelMedium $resolutionMedium
+    card 0x6721 "Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6724 "Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6725 "Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6744 "ATI Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6764 "Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6765 "Mobility Radeon HD 6000 series" $cardLevelMedium $resolutionMedium
+    card 0x6770 "ATI Radeon 5xxx series" $cardLevelHigh $resolutionHigh
+    card 0x6750 "ATI Radeon 5xxx series" $cardLevelHigh $resolutionHigh
+    card 0x689C "Radeon HD 5900 Series" $cardLevelHigh $resolutionHigh
+    card 0x689D "Radeon HD 5900 Series" $cardLevelHigh $resolutionHigh
+    card 0x6898 "Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x6899 "Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x689E "Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68C7 "ATI Mobility Radeon HD 5570" $cardLevelHigh $resolutionHigh
+    card 0x68A0 "ATI Mobility Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68A1 "ATI Mobility Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68B0 "ATI Mobility Radeon HD 5800 Series" $cardLevelHigh $resolutionHigh
+    card 0x68A9 "ATI FirePro V5800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionMedium
+    card 0x68BE "Radeon HD 5700 Series" $cardLevelHigh $resolutionHigh
+    card 0x68B8 "Radeon HD 5700 Series" $cardLevelHigh $resolutionHigh
+    card 0x68D8 "ATI Radeon HD 5670" $cardLevelHigh $resolutionMedium
+    card 0x68B9 "Radeon HD 5600 Series" $cardLevelHigh $resolutionMedium
+    card 0x68DA "Radeon HD 5500 Series" $cardLevelMedium $resolutionMedium
+    card 0x675F "AMD Radeon HD 5500 Series" $cardLevelMedium $resolutionMedium
+    card 0x68D9 "ATI Radeon HD 5570" $cardLevelMedium $resolutionMedium
+    card 0x68F9 "Radeon HD 5400 Series" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x68C1 "ATI Mobility Radeon HD 5000 Series" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x68E0 "ATI Mobility Radeon HD 5000 Series" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x68E1 "ATI Mobility Radeon HD 5000 Series" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x9555 "ATI Mobility Radeon HD 5450" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x68C8 "ATI FirePro V4800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x68C9 "ATI FirePro 3800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x688C "AMD FireStream 9370" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x688D "AMD FireStream 9350" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6768 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6889 "ATI FirePro V7800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6888 "ATI FirePro V8800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x688A "ATI FirePro V9800 (FireGL) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6700 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6701 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6702 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6703 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6704 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6705 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6706 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6707 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6708 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6709 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6728 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6729 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6749 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x674A "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6780 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6784 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6788 "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x678A "ATI FirePro V (FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6808 "ATI FirePro V(FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6809 "ATI FirePro V(FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x6828 "ATI FirePro V(FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x684C "ATI FirePro V(FireGL V) Graphics Adapter" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x9905 "ATI FirePro A300 Series(FireGL V) Graphics Adapter" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9906 "AMD FirePro A300 Series (FireGL V) Graphics Adapter" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x6640 "AMD FirePro M6100 FireGL V" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x9444 "ATI FirePro V8750 (FireGL)" $cardLevelHigh $resolutionHigh
+    card 0x9456 "ATI FirePro V8700 (FireGL)" $cardLevelHigh $resolutionHigh
+    card 0x949c "ATI FirePro V7750 (FireGL)" $cardLevelMedium $resolutionMedium
+    card 0x949e "ATI FirePro V5700 (FireGL)" $cardLevelMedium $resolutionMedium
+    card 0x94a3 "ATI FirePro M7740" $cardLevelMedium $resolutionMedium
+    card 0x9440 "Radeon HD 4870" $cardLevelHigh $resolutionHigh
+    card 0x9441 "Radeon HD 4870 X2" $cardLevelHigh $resolutionHigh
+    card 0x9442 "Radeon HD 4850" $cardLevelHigh $resolutionHigh
+    card 0x9443 "Radeon HD 4850 x2" $cardLevelHigh $resolutionHigh
+    card 0x944C "Radeon HD 4830" $cardLevelHigh $resolutionHigh
+    card 0x94a0 "Radeon HD 4830" $cardLevelHigh $resolutionHigh
+    card 0x944A "Radeon HD 4800 Series" $cardLevelHigh $resolutionHigh
+    card 0x9460 "Radeon HD 4800 Series" $cardLevelHigh $resolutionHigh
+    card 0x9462 "Radeon HD 4800 Series" $cardLevelHigh $resolutionHigh
+    card 0x94B3 "Radeon HD 4770" $cardLevelMedium $resolutionMedium
+    card 0x94B5 "Radeon HD 4770" $cardLevelMedium $resolutionMedium
+    card 0x944E "Radeon HD 4700 Series" $cardLevelMedium $resolutionMedium
+    card 0x94B4 "Radeon HD 4700 Series" $cardLevelMedium $resolutionMedium
+    card 0x9498 "Radeon HD 4600 Series" $cardLevelMedium $resolutionMedium
+    card 0x9495 "Radeon HD 4600 Series" $cardLevelMedium $resolutionMedium
+    card 0x9490 "Radeon HD 4600 Series" $cardLevelMedium $resolutionMedium
+    card 0x9450 "Radeon HD 4550" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x9540 "Radeon HD 4500 Series" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x955f "Radeon HD 4350 Series" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x954F "Radeon HD 4300 Series" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x9552 "Radeon HD 4300 Series" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x9714 "Radeon HD 4290" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x9715 "Radeon HD 4250" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x9710 "Radeon HD 4200" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x945A "ATI Mobility Radeon HD 4870" $cardLevelMedium $resolutionMedium
+    card 0x9553 "ATI Mobility Radeon HD 4500/5100 Series" $cardLevelLow $resolutionLow
+    card 0x9488 "ATI Mobility Radeon HD 4670" $cardLevelLowmedium $resolutionLow
+    card 0x9480 "ATI Mobility Radeon HD 4650" $cardLevelLowmedium $resolutionLow
+    card 0x9491 "ATI RADEON E4690" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x9712 "Radeon HD 4250" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x950F "Radeon HD 3870 X2" $cardLevelMedium $resolutionMedium
+    card 0x9509 "Radeon HD 3870 X2" $cardLevelMedium $resolutionMedium
+    card 0x9508 "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x9501 "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x724e "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x726e "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x9519 "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x9511 "Radeon HD 3870" $cardLevelMedium $resolutionMedium
+    card 0x9513 "Radeon HD 3850 X2" $cardLevelMedium $resolutionHigh
+    card 0x9506 "Radeon HD 3850 X2" $cardLevelMedium $resolutionHigh
+    card 0x9505 "Radeon HD 3850" $cardLevelMedium $resolutionMedium
+    card 0x9500 "Radeon HD 3850" $cardLevelMedium $resolutionMedium
+    card 0x9504 "Radeon HD 3850" $cardLevelMedium $resolutionMedium
+    card 0x9507 "Radeon HD 3850" $cardLevelMedium $resolutionMedium
+    card 0x9515 "Radeon HD 3850 AGP" $cardLevelMedium $resolutionMedium
+    card 0x9590 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9597 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9598 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9599 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9591 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9593 "Radeon HD 3600" $cardLevelMedium $resolutionLow
+    card 0x9596 "Radeon HD 3600 AGP" $cardLevelLow $resolutionLow
+    card 0x95cf "Radeon HD 3450" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x95c6 "Radeon HD 3450" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95c9 "Radeon HD 3450" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95C5 "Radeon HD 3400" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95C4 "Radeon HD 3400" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95C2 "Radeon HD 3400" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95c7 "Radeon HD 3400" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x95c0 "Radeon HD 3400" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x9614 "Radeon HD 3200" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9610 "Radeon HD 3200" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9612 "Radeon HD 3200" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9620 "ATI Radeon HD 3200 Graphics" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9405 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x9404 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x9403 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x9402 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x9401 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x9400 "Radeon HD 2900" $cardLevelMedium $resolutionMedium
+    card 0x958E "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x958B "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9589 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9588 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9587 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9586 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9583 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x9580 "ATI Radeon HD 2600 X2 Series" $cardLevelMedium $resolutionLow
+    card 0x9581 "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x95cc "Radeon HD 2600" $cardLevelMedium $resolutionLow
+    card 0x94CB "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C9 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C5 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C4 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C3 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C1 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94CC "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9611 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9613 "Radeon HD 2400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C8 "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x94C7 "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x718A "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7188 "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7211 "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7210 "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x958D "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x958C "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x940F "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x940B "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x940A "Radeon HD 2300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x68F1 "ATI Firepro 2460" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x68F2 "AMD FirePro 2270 (ATI FireGL)" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x9616 "AMD 760G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7248 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7249 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x724A "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x724B "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x724C "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x724D "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x724F "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7243 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7245 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7246 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7247 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7268 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7269 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x726A "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x726B "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x726C "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x726D "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x726F "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7263 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7265 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7266 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7267 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7280 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7240 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7244 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x72A0 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7260 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7264 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7288 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x72A8 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7284 "Radeon X1900" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x7101 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7102 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7105 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7108 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7109 "Radeon X1800 Series" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7120 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7129 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x710A "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x710B "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x710C "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7100 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7125 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7128 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x712A "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x712B "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x712C "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7124 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x710E "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x712E "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x710F "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x712F "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7104 "Radeon X1800" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7106 "Radeon X1800 Mobility" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7103 "Radeon X1800 Mobility" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C0 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C2 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E0 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E2 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x81EE "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x81C0 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7140 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71CD "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7181 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7160 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71ED "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71A1 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C6 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7291 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7293 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C1 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C5 "Radeon X1600 Mobility" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C7 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E6 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x72B1 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x72B3 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E1 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E7 "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x719B "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71BB "Radeon X1600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71D4 "Radeon X1600 Mobility" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7142 "Radeon X1550" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7146 "Radeon X1300 Series" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7162 "Radeon X1300 Series" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7166 "Radeon X1300 Series" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x714E "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x715E "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x714D "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71CE "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C3 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x718F "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x716E "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x717E "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x716D "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71E3 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71AF "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7190 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7183 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7187 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71A0 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71A3 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71A7 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7147 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x715F "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7167 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x717f "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7193 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7143 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71B3 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7163 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7149 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x714A "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x714B "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x714C "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x718B "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x718C "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7196 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7145 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7186 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x718D "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71C4 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71D5 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71DE "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71D6 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7152 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7172 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7153 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7173 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71D2 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71DA "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71F2 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71FA "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x5E48 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x7180 "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x719f "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x71ee "Radeon X1300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x791E "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x791F "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x793F "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x7941 "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x7942 "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A62 "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x5975 "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A42 "Radeon X1200" $cardLevelLow $resolutionLow unsupported
+    card 0x4B49 "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x4B4B "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x4B4C "Radeon X850 AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x4B69 "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x4B6B "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x4B6C "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x5D52 "Radeon X850 (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D4D "Radeon X850 (R423) AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x5D4F "Radeon X850 (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D6F "Radeon X850 (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D72 "Radeon X850 (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D6D "Radeon X850 (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x4b4a "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x4b6a "Radeon X850" $cardLevelLow $resolutionLow unsupported
+    card 0x554A "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D57 "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5548 "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5568 "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x5D77 "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x556A "Radeon X800 XT (R423)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a48 "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4A49 "Radeon X800 PRO" $cardLevelLow $resolutionLow unsupported
+    card 0x4A4A "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x4A4B "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x4A4C "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x4A4D "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x4a4e "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4A50 "Radeon X800 XT Platinum Edition" $cardLevelLow $resolutionLow unsupported
+    card 0x4a68 "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a69 "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6a "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6b "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6c "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6d "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6e "Radeon X800 (R420)" $cardLevelLow $resolutionLow unsupported
+    card 0x4A70 "Radeon X800 XT Platinum Edition" $cardLevelLow $resolutionLow unsupported
+    card 0x5549 "Radeon X800 AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x554B "Radeon X800GT" $cardLevelLow $resolutionLow unsupported
+    card 0x554D "Radeon X800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x554F "Radeon X800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x5569 "Radeon X800 PRO" $cardLevelLow $resolutionLow unsupported
+    card 0x556B "Radeon X800GT" $cardLevelLow $resolutionLow unsupported
+    card 0x556D "Radeon X800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x556F "Radeon X800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4A54 "Radeon ALL-IN-WONDER X800 VE" $cardLevelLow $resolutionLow unsupported
+    card 0x4A74 "Radeon ALL-IN-WONDER X800 VE" $cardLevelLow $resolutionLow unsupported
+    card 0x5E68 "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5551 "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5571 "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5550 "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5570 "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5D49 "Radeon X800 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5d4a "Radeon X800 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5d48 "Radeon X800 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x4a4f "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x4a6f "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5d4e "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x554e "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5d6e "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x556e "Radeon X800" $cardLevelLow $resolutionLow unsupported
+    card 0x5E4B "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5E4C "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5E4D "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5E6B "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5E6C "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5E6D "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5653 "Radeon X700 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5673 "Radeon X700 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5e4a "Radeon X700 XT" $cardLevelLow $resolutionLow unsupported
+    card 0x5e6a "Radeon X700 XT" $cardLevelLow $resolutionLow unsupported
+    card 0x566f "Radeon X700" $cardLevelLow $resolutionLow unsupported
+    card 0x5652 "Radeon X700 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x9595 "Radeon X700 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x3e50 "Radeon X600 (R380)" $cardLevelLow $resolutionLow unsupported
+    card 0x3e54 "Radeon X600 (R380)" $cardLevelLow $resolutionLow unsupported
+    card 0x3e70 "Radeon X600 (R380)" $cardLevelLow $resolutionLow unsupported
+    card 0x3e74 "Radeon X600 (R380)" $cardLevelLow $resolutionLow unsupported
+    card 0x5B62 "Radeon X600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x5B72 "Radeon X600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4C6E "Radeon X600" $cardLevelLow $resolutionLow unsupported
+    card 0x3150 "Radeon X600" $cardLevelLow $resolutionLow unsupported
+    card 0x5462 "Radeon X600" $cardLevelLow $resolutionLow unsupported
+    card 0x5b60 "Radeon X300 (RV370)" $cardLevelLow $resolutionLow unsupported
+    card 0x5b64 "Radeon X300 (RV370)" $cardLevelLow $resolutionLow unsupported
+    card 0x5b70 "Radeon X300 (RV370)" $cardLevelLow $resolutionLow unsupported
+    card 0x5b74 "Radeon X300 (RV370)" $cardLevelLow $resolutionLow unsupported
+    card 0x5E4F "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5E6F "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5460 "Radeon X300 Mobility (M22)" $cardLevelLow $resolutionLow unsupported
+    card 0x5461 "Radeon X300 Mobility (M22)" $cardLevelLow $resolutionLow unsupported
+    card 0x5B63 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x564F "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5B65 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5657 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5677 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5B73 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5B75 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x5D45 "Radeon X300" $cardLevelLow $resolutionLow unsupported
+    card 0x3152 "Radeon X300 Mobility (M24)" $cardLevelLow $resolutionLow unsupported
+    card 0x5464 "Radeon X300 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x3154 "Radeon X300 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x564A "Radeon X300 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x564B "Radeon X300 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5854 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5874 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5954 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5955 "Radeon X200 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x5965 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5974 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A41 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A43 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A61 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x5A63 "Radeon X200" $cardLevelLow $resolutionLow unsupported
+    card 0x4148 "Radeon 9800 (R350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4168 "Radeon 9800 (R350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4E48 "Radeon 9800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4E49 "Radeon 9800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4E68 "Radeon 9800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4E69 "Radeon 9800 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4e4a "Radeon 9800 XT (R360)" $cardLevelLow $resolutionLow unsupported
+    card 0x4e6a "Radeon 9800 XT (R360)" $cardLevelLow $resolutionLow unsupported
+    card 0x4145 "Radeon 9700 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4146 "Radeon 9700 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4E44 "Radeon 9700 PRO" $cardLevelLow $resolutionLow unsupported
+    card 0x4e45 "Radeon 9700 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4e64 "Radeon 9700 PRO (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4e65 "Radeon 9700 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4152 "Radeon 9600 XT (RV360)" $cardLevelLow $resolutionLow unsupported
+    card 0x4172 "Radeon 9600 XT (RV360)" $cardLevelLow $resolutionLow unsupported
+    card 0x4150 "Radeon 9600 SE (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4151 "Radeon 9600 SE (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4170 "Radeon 9600 (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4171 "Radeon 9600 SE (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4e46 "Radeon 9600 (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4e66 "Radeon 9600 (RV350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4E51 "Radeon 9600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4E71 "Radeon 9600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4E50 "Radeon 9600 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x4E54 "Radeon 9600 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x4E52 "Radeon 9600 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x4155 "Radeon 9600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x4166 "Radeon 9600 TX" $cardLevelLow $resolutionLow unsupported
+    card 0x4E56 "Radeon 9600 Mobility" $cardLevelLow $resolutionLow unsupported
+    card 0x4154 "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x4174 "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x4175 "Radeon 9600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x95ce "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x3151 "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x3171 "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x95cd "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x959b "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x958f "Radeon 9600" $cardLevelLow $resolutionLow unsupported
+    card 0x4153 "Radeon 9550" $cardLevelLow $resolutionLow unsupported
+    card 0x4173 "Radeon 9550" $cardLevelLow $resolutionLow unsupported
+    card 0x4144 "Radeon 9500 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4149 "Radeon 9500 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4164 "Radeon 9500 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4169 "Radeon 9500 (R300)" $cardLevelLow $resolutionLow unsupported
+    card 0x4167 "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4147 "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4E47 "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4E67 "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4E4B "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4E6B "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x796e "Radeon 9500" $cardLevelLow $resolutionLow unsupported
+    card 0x4136 "Radeon IGP 320" $cardLevelLow $resolutionLow unsupported
+    card 0x5C41 "Radeon 9250 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x5940 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5941 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5960 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5961 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5964 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5C43 "Radeon 9200 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x5d44 "Radeon 9200 (RV280)" $cardLevelLow $resolutionLow unsupported
+    card 0x5c61 "Mobility Radeon 9200 (M9+)" $cardLevelLow $resolutionLow unsupported
+    card 0x5c63 "Mobility Radeon 9200 (M9+)" $cardLevelLow $resolutionLow unsupported
+    card 0x7835 "Mobility Radeon 9200 IGP (RS350M)" $cardLevelLow $resolutionLow unsupported
+    card 0x414d "Radeon 9100 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x514d "Radeon 9100 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x516d "Radeon 9100 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x7834 "Radeon 9000 XT IGP (RS350)" $cardLevelLow $resolutionLow unsupported
+    card 0x4966 "Radeon 9000 (RV250)" $cardLevelLow $resolutionLow unsupported
+    card 0x4967 "Radeon 9000 (RV250)" $cardLevelLow $resolutionLow unsupported
+    card 0x496E "Radeon ALL-IN-WONDER 9000" $cardLevelLow $resolutionLow unsupported
+    card 0x496f "Radeon 9000 (RV250)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c67 "Radeon 9000 (RV250)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c6f "Radeon 9000 (RV250)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c66 "Mobility Radeon 9000 (M9)" $cardLevelLow $resolutionLow unsupported
+    card 0x5834 "Radeon 9000/9100 IGP (RS300)" $cardLevelLow $resolutionLow unsupported
+    card 0x5835 "Mobility Radeon 9000 IGP (RS300M)" $cardLevelLow $resolutionLow unsupported
+    card 0x4242 "Radeon 8500 (R200) (All-In-Wonder Radeon 8500DV)" $cardLevelLow $resolutionLow unsupported
+    card 0x5148 "Radeon 8500 (R200 QH) (Radeon FireGL)" $cardLevelLow $resolutionLow unsupported
+    card 0x514c "Radeon 8500 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x514e "Radeon 8500 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x514f "Radeon 8500 (R200)" $cardLevelLow $resolutionLow unsupported
+    card 0x516c "Radeon R200 Ql" $cardLevelLow $resolutionLow unsupported
+    card 0x5157 "Radeon 7500 (RV200)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c57 "Mobility Radeon 7500 (M7)" $cardLevelLow $resolutionLow unsupported
+    card 0x5144 "Radeon / Radeon 7200 (R100)" $cardLevelLow $resolutionLow unsupported
+    card 0x5145 "Radeon / Radeon 7200 (R100)" $cardLevelLow $resolutionLow unsupported
+    card 0x5146 "Radeon / Radeon 7200 (R100)" $cardLevelLow $resolutionLow unsupported
+    card 0x5147 "Radeon / Radeon 7200 (R100)" $cardLevelLow $resolutionLow unsupported
+    card 0x4237 "Radeon 7000 IGP (RS250)" $cardLevelLow $resolutionLow unsupported
+    card 0x4437 "Mobility Radeon 7000 IGP (RS250M)" $cardLevelLow $resolutionLow unsupported
+    card 0x5159 "Radeon VE / Radeon 7000 (RV100 - low-cost Radeon, dual CRT but no TCL)" $cardLevelLow $resolutionLow unsupported
+    card 0x515a "Radeon VE / Radeon 7000 (RV100 - low-cost Radeon, dual CRT but no TCL)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c58 "Mobility Radeon (M6 - Radeon VE based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c59 "Mobility Radeon (M6 - Radeon VE based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c5a "Mobility Radeon (M6 - Radeon VE based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4137 "Radeon IGP 340 (RS200)" $cardLevelLow $resolutionLow unsupported
+    card 0x4337 "Radeon IGP 340M (RS200M)" $cardLevelLow $resolutionLow unsupported
+    card 0x4336 "Radeon IGP 320M  (U1)" $cardLevelLow $resolutionLow unsupported
+    card 0x4d46 "Rage Mobility 128 M4 (Rage 128 Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4d4c "Rage Mobility 128 M4 (Rage 128 Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c45 "Rage Mobility 128 M3 (Rage 128 Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c46 "Rage Mobility 128 M3 (Rage 128 Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x5446 "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x544c "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x5452 "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x5453 "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x5454 "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x5455 "Rage 128 Pro ULTRA" $cardLevelLow $resolutionLow unsupported
+    card 0x5041 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5042 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5043 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5044 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5045 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5046 "Rage 128 Pro GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5047 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5048 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5049 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504a "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504b "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504c "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504d "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504e "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x504f "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5050 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5051 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5052 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5053 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5054 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5055 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5056 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5057 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5058 "Rage 128 Pro VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5245 "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5246 "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x5247 "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x534b "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x534c "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x534d "Rage 128 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x524b "Rage 128 VR" $cardLevelLow $resolutionLow unsupported
+    card 0x524c "Rage 128 VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5345 "Rage 128 VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5346 "Rage 128 VR" $cardLevelLow $resolutionLow unsupported
+    card 0x5347 "Rage 128 VR" $cardLevelLow $resolutionLow unsupported
+    card 0x4c4d "Rage Mobility M/M1/P (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c4e "Rage Mobility M/M1/P (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c52 "Rage Mobility M/M1/P (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c53 "Rage Mobility M/M1/P (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c54 "Rage Mobility M/M1/P (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c42 "Rage LT-Pro (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c44 "Rage LT-Pro (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c49 "Rage LT-Pro (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c50 "Rage LT-Pro (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c51 "Rage LT-Pro (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4c47 "Rage LT (Rage II based)" $cardLevelLow $resolutionLow unsupported
+    card 0x474d "Rage XL (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x474f "Rage XL (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4752 "Rage XL (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x474c "Rage XC (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x474e "Rage XC (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4753 "Rage XC (Rage Pro based)" $cardLevelLow $resolutionLow unsupported
+    card 0x4742 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4744 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4747 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4749 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4750 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4751 "Rage Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x4757 "Rage IIC AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x4759 "Rage IIC AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x475a "Rage IIC AGP" $cardLevelLow $resolutionLow unsupported
+    card 0x4756 "Rage IIC PCI" $cardLevelLow $resolutionLow unsupported
+    card 0x5656 "Rage IIC PCI" $cardLevelLow $resolutionLow unsupported
+    card 0x4755 "Rage II+" $cardLevelLow $resolutionLow unsupported
+    card 0x4754 "Rage II" $cardLevelLow $resolutionLow unsupported
+    card 0x4354 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x4358 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x4554 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x4654 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x4758 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x5354 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x5654 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x5655 "Mach 64" $cardLevelLow $resolutionLow unsupported
+    card 0x4158 "Mach 32" $cardLevelLow $resolutionLow unsupported
+end
+vendor "NVIDIA" 0x10b4 0x12d2 0x10de
+    card 0x1e04 "NVIDIA GeForce RTX 2080 Ti (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1e07 "NVIDIA GeForce RTX 2080 Ti (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1e82 "NVIDIA GeForce RTX 2080 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1e87 "NVIDIA GeForce RTX 2080 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1f02 "NVIDIA GeForce RTX 2070 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1f07 "NVIDIA GeForce RTX 2070 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1f08 "NVIDIA GeForce RTX 2060 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x2191 "NVIDIA GeForce GTX 1660 Ti (Turing)" $cardLevelUber $resolutionHigh
+    card 0x2184 "NVIDIA GeForce GTX 1660 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1F82 "NVIDIA GeForce GTX 1650 (Turing)" $cardLevelUber $resolutionHigh
+    card 0x1b06 "NVIDIA GeForce GTX 1080 Ti (Pascal)" $cardLevelUber $resolutionHigh
+    card 0x1b00 "NVIDIA GeForce GTX Titan X (Pascal)" $cardLevelUber $resolutionHigh
+    card 0x1b80 "NVIDIA GeForce GTX 1080" $cardLevelUber $resolutionHigh
+    card 0x1be0 "NVIDIA GeForce GTX 1080" $cardLevelUber $resolutionHigh
+    card 0x1B82 "NVIDIA GeForce GTX 1070 Ti" $cardLevelUber $resolutionHigh
+    card 0x1b81 "NVIDIA GeForce GTX 1070" $cardLevelUber $resolutionHigh
+    card 0x1be1 "NVIDIA GeForce GTX 1070" $cardLevelUber $resolutionHigh
+    card 0x1ba1 "NVIDIA GeForce GTX 1070" $cardLevelUber $resolutionHigh
+    card 0x1C00 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh (6GB)
+    card 0x1c03 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh (6GB)
+    card 0x1C02 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh (3GB)
+    card 0x1b84 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh (3GB)
+    card 0x1C20 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh
+    card 0x1B83 "NVIDIA GeForce GTX 1060" $cardLevelUber $resolutionHigh
+    card 0x1C60 "NVIDIA GeForce GTX 1060 Mobile" $cardLevelUber $resolutionHigh
+    card 0x1c61 "NVIDIA GeForce GTX 1050Ti Mobile" $cardLevelUber $resolutionHigh
+    card 0x1c62 "NVIDIA GeForce GTX 1050 Mobile" $cardLevelUber $resolutionHigh
+    card 0x1c81 "NVIDIA GeForce GTX 1050" $cardLevelUber $resolutionHigh
+    card 0x1c82 "NVIDIA GeForce GTX 1050Ti" $cardLevelUber $resolutionHigh
+    card 0x1c8c "NVIDIA GeForce GTX 1050Ti Mobile" $cardLevelUber $resolutionHigh
+    card 0x1c8d "NVIDIA GeForce GTX 1050 Mobile" $cardLevelUber $resolutionHigh
+    card 0x1D01 "NVIDIA GeForce GTX 1030" $cardLevelHigh $resolutionHigh
+    card 0x17C2 "NVIDIA GeForce GTX TITAN X (Maxwell)" $cardLevelUber $resolutionHigh
+    card 0x17C8 "NVIDIA GeForce GTX 980ti" $cardLevelUber $resolutionHigh
+    card 0x13C0 "NVIDIA GeForce GTX 980" $cardLevelUber $resolutionHigh
+    card 0x13C2 "NVIDIA GeForce GTX 970" $cardLevelUber $resolutionHigh
+    card 0x1401 "NVIDIA GeForce GTX 960" $cardLevelUber $resolutionHigh
+    card 0x1402 "NVIDIA GeForce GTX 950" $cardLevelHigh $resolutionHigh
+    card 0x13D7 "NVIDIA GeForce GTX 980M" $cardLevelUber $resolutionHigh
+    card 0x1617 "NVIDIA GeForce GTX 980M" $cardLevelUber $resolutionHigh
+    card 0x13D8 "NVIDIA GeForce GTX 970M" $cardLevelUber $resolutionHigh
+    card 0x1618 "NVIDIA GeForce GTX 970M" $cardLevelUber $resolutionHigh
+    card 0x13D9 "NVIDIA GeForce GTX 965M" $cardLevelHigh $resolutionHigh
+    card 0x1619 "NVIDIA GeForce GTX 965M" $cardLevelHigh $resolutionHigh
+    card 0x1427 "NVIDIA GeForce GTX 965M" $cardLevelHigh $resolutionHigh
+    card 0x139B "NVIDIA GeForce GTX 960M" $cardLevelHigh $resolutionHigh
+    card 0x139A "NVIDIA GeForce GTX 950M" $cardLevelHigh $resolutionHigh
+    card 0x1347 "NVIDIA GeForce GTX 940M" $cardLevelMedium $resolutionHigh
+    card 0x139C "NVIDIA GeForce GTX 940M" $cardLevelMedium $resolutionHigh
+    card 0x134D "NVIDIA GeForce GTX 940MX" $cardLevelMedium $resolutionHigh
+    card 0x179C "NVIDIA GeForce GTX 940MX" $cardLevelMedium $resolutionHigh
+    card 0x1D10 "NVIDIA GeForce GTX MX150" $cardLevelMedium $resolutionHigh
+    card 0x1D12 "NVIDIA GeForce GTX MX150" $cardLevelMedium $resolutionHigh
+    card 0x1346 "NVIDIA GeForce GTX 930M" $cardLevelMedium $resolutionHigh
+    card 0x134E "NVIDIA GeForce GTX 930MX" $cardLevelMedium $resolutionHigh
+    card 0x1299 "NVIDIA GeForce GTX 920M" $cardLevelMedium $resolutionHigh
+    card 0x134F "NVIDIA GeForce GTX 920MX" $cardLevelMedium $resolutionHigh
+    card 0x134B "NVIDIA Custom MS Surface Book" $cardLevelMedium $resolutionHigh
+    card 0x1198 "NVIDIA GeForce GTX 880M" $cardLevelUber $resolutionHigh
+    card 0x1199 "NVIDIA GeForce GTX 870M" $cardLevelUber $resolutionHigh
+    card 0x119a "NVIDIA GeForce GTX 860M" $cardLevelHigh $resolutionHigh
+    card 0x1392 "NVIDIA GeForce GTX 860M" $cardLevelHigh $resolutionHigh
+    card 0x1391 "NVIDIA GeForce GTX 850M" $cardLevelHigh $resolutionHigh
+    card 0x1344 "NVIDIA GeForce GTX 845M" $cardLevelHigh $resolutionHigh
+    card 0x1398 "NVIDIA GeForce GTX 845M" $cardLevelHigh $resolutionHigh
+    card 0x1341 "NVIDIA GeForce GTX 840M" $cardLevelMedium $resolutionHigh
+    card 0x1340 "NVIDIA GeForce GTX 830M" $cardLevelMedium $resolutionMedium
+    card 0x1296 "NVIDIA GeForce GTX 825M" $cardLevelMedium $resolutionMedium
+    card 0x10de "GeForce GTX TITAN Z" $cardLevelUber $resolutionHigh
+    card 0x100c "GeForce GTX TITAN Black" $cardLevelUber $resolutionHigh
+    card 0x1005 "GeForce GTX TITAN" $cardLevelUber $resolutionHigh
+    card 0x100a "GeForce GTX 780 Ti" $cardLevelUber $resolutionHigh
+    card 0x1004 "GeForce GTX 780" $cardLevelUber $resolutionHigh
+    card 0x1007 "GeForce GTX 780" $cardLevelUber $resolutionHigh
+    card 0x1184 "GeForce GTX 770" $cardLevelUber $resolutionHigh
+    card 0x1193 "GeForce GTX 760 Ti OEM" $cardLevelUber $resolutionHigh
+    card 0x1187 "GeForce GTX 760" $cardLevelUber $resolutionHigh
+    card 0x118e "GeForce GTX 760 (192-bit)" $cardLevelUber $resolutionHigh
+    card 0x1380 "GeForce GTX 750 Ti" $cardLevelUber $resolutionHigh
+    card 0x1381 "GeForce GTX 750" $cardLevelUber $resolutionHigh
+    card 0x1382 "GeForce GT 745" $cardLevelHigh $resolutionHigh
+    card 0x0fc8 "GeForce GT 740" $cardLevelHigh $resolutionHigh
+    card 0x0f02 "GeForce GT 730" $cardLevelMedium $resolutionMedium
+    card 0x1287 "GeForce GT 730" $cardLevelMedium $resolutionMedium
+    card 0x1286 "GeForce GT 720" $cardLevelMedium $resolutionMedium
+    card 0x1288 "GeForce GT 720" $cardLevelMedium $resolutionMedium
+    card 0x1295 "GeForce GT 710A" $cardLevelMedium $resolutionMedium
+    card 0x1281 "GeForce GT 710" $cardLevelLowmedium $resolutionMedium
+    card 0x119E "GeForce GTX 780M" $cardLevelUber $resolutionHigh
+    card 0x119f "GeForce GTX 780M" $cardLevelUber $resolutionHigh
+    card 0x119D "GeForce GTX 775M" $cardLevelUber $resolutionHigh
+    card 0x11e0 "GeForce GTX 770M" $cardLevelUber $resolutionHigh
+    card 0x11E2 "GeForce GTX 765M" $cardLevelUber $resolutionHigh
+    card 0x11e1 "GeForce GTX 765M" $cardLevelUber $resolutionHigh
+    card 0x11E3 "GeForce GTX 760M" $cardLevelUber $resolutionHigh
+    card 0x0FEA "GeForce GT 755M" $cardLevelHigh $resolutionHigh
+    card 0x0fcd "GeForce GT 755M" $cardLevelHigh $resolutionHigh
+    card 0x0FE9 "GeForce GT 750M" $cardLevelHigh $resolutionHigh
+    card 0x0FE4 "GeForce GT 750M" $cardLevelHigh $resolutionHigh
+    card 0x0FE2 "GeForce GT 745M" $cardLevelHigh $resolutionHigh
+    card 0x0FE3 "GeForce GT 745A" $cardLevelHigh $resolutionHigh
+    card 0x1292 "GeForce GT 740M" $cardLevelHigh $resolutionMedium
+    card 0x0fdf "GeForce GT 740M" $cardLevelHigh $resolutionMedium
+    card 0x1291 "GeForce GT 735M" $cardLevelMedium $resolutionMedium
+    card 0x0FE1 "GeForce GT 730M" $cardLevelMedium $resolutionMedium
+    card 0x1290 "GeForce GT 730M" $cardLevelMedium $resolutionMedium
+    card 0x1298 "GeForce GT 720M" $cardLevelMedium $resolutionMedium
+    card 0x1289 "GeForce GT 710" $cardLevelMedium $resolutionMedium
+    card 0x128B "GeForce GT 710" $cardLevelMedium $resolutionMedium
+    card 0x12b9 "NVIDIA Quadro K610M" $cardLevelMedium $resolutionMedium
+    card 0x65C "NVIDIA Quadro FX 770M" $cardLevelMedium $resolutionMedium
+    card 0x105B "GeForce 705M" $cardLevelLowmedium $resolutionMedium
+    card 0x104c "GeForce 705" $cardLevelLowmedium $resolutionMedium
+    card 0x0ff6 "NVIDIA Quadro K1100M" $cardLevelHigh $resolutionMedium
+    card 0x0ffe "NVIDIA Quadro K2000" $cardLevelHigh $resolutionHigh
+    card 0x1096 "NVIDIA Tesla C2075" $cardLevelHigh $resolutionHigh
+    card 0x11b6 "NVIDIA Quadro K3100M" $cardLevelUber $resolutionHigh
+    card 0x11b7 "NVIDIA Quadro K4100M" $cardLevelUber $resolutionHigh
+    card 0x11be "NVIDIA Quadro K3000M" $cardLevelHigh $resolutionHigh
+    card 0x11fa "NVIDIA Quadro K4000" $cardLevelHigh $resolutionHigh
+    card 0x11fc "NVIDIA Quadro K2100M" $cardLevelHigh $resolutionHigh
+    card 0x1188 "GeForce GTX 690" $cardLevelUber $resolutionHigh
+    card 0x1180 "GeForce GTX 680" $cardLevelUber $resolutionHigh
+    card 0x1189 "GeForce GTX 670" $cardLevelUber $resolutionHigh
+    card 0x1183 "GeForce GTX 660 Ti" $cardLevelUber $resolutionHigh
+    card 0x11C0 "GeForce GTX 660" $cardLevelUber $resolutionHigh
+    card 0x1185 "GeForce GTX 660" $cardLevelUber $resolutionHigh
+    card 0x11c2 "GeForce GTX 650 Ti BOOST" $cardLevelUber $resolutionHigh
+    card 0x11C6 "GeForce GTX 650 Ti" $cardLevelUber $resolutionHigh
+    card 0x11c3 "GeForce GTX 650 Ti" $cardLevelUber $resolutionHigh
+    card 0x0FC6 "GeForce GTX 650" $cardLevelUber $resolutionHigh
+    card 0x11c8 "GeForce GTX 650" $cardLevelUber $resolutionHigh
+    card 0x11C4 "GeForce GT 645" $cardLevelMedium $resolutionHigh
+    card 0x1207 "GeForce GT 645" $cardLevelMedium $resolutionHigh
+    card 0x124B "GeForce GT 640" $cardLevelMedium $resolutionHigh
+    card 0x0FC0 "GeForce GT 640" $cardLevelMedium $resolutionHigh
+    card 0x0FC1 "GeForce GT 640" $cardLevelMedium $resolutionHigh
+    card 0x1282 "GeForce GT 640" $cardLevelMedium $resolutionHigh
+    card 0x1280 "GeForce GT 635" $cardLevelMedium $resolutionMedium
+    card 0x0FC2 "GeForce GT 630" $cardLevelMedium $resolutionMedium
+    card 0x1284 "GeForce GT 630" $cardLevelMedium $resolutionMedium
+    card 0x0F00 "GeForce GT 630" $cardLevelMedium $resolutionMedium
+    card 0x104b "GeForce GT 625" $cardLevelLowmedium $resolutionMedium
+    card 0x0F01 "GeForce GT 620" $cardLevelLowmedium $resolutionMedium
+    card 0x1049 "GeForce GT 620" $cardLevelLowmedium $resolutionMedium
+    card 0x104A "GeForce GT 610" $cardLevelLowmedium $resolutionMedium
+    card 0x11A3 "GeForce GTX 680MX" $cardLevelUber $resolutionHigh
+    card 0x11A0 "GeForce GTX 680M" $cardLevelUber $resolutionHigh
+    card 0x11A7 "GeForce GTX 675MX" $cardLevelUber $resolutionHigh
+    card 0x11A2 "GeForce GTX 675MX" $cardLevelUber $resolutionHigh
+    card 0x1212 "GeForce GTX 675M" $cardLevelUber $resolutionHigh
+    card 0x11A1 "GeForce GTX 670MX" $cardLevelUber $resolutionHigh
+    card 0x1213 "GeForce GTX 670M" $cardLevelUber $resolutionHigh
+    card 0x0FE0 "GeForce GTX 660M" $cardLevelUber $resolutionHigh
+    card 0x0FD4 "GeForce GTX 660M" $cardLevelUber $resolutionHigh
+    card 0x0FD5 "GeForce GT 650M" $cardLevelUber $resolutionHigh
+    card 0x0FD1 "GeForce GT 650M" $cardLevelUber $resolutionHigh
+    card 0x0FD9 "GeForce GT 645M" $cardLevelHigh $resolutionHigh
+    card 0x0FD8 "GeForce GT 640M" $cardLevelHigh $resolutionMedium
+    card 0x0FD2 "GeForce GT 640M" $cardLevelHigh $resolutionMedium
+    card 0x0FD3 "GeForce GT 640M LE" $cardLevelHigh $resolutionMedium
+    card 0x0DE3 "GeForce GT 635M" $cardLevelMedium $resolutionMedium
+    card 0x1247 "GeForce GT 635M" $cardLevelMedium $resolutionMedium
+    card 0x0DE9 "GeForce GT 630M" $cardLevelMedium $resolutionMedium
+    card 0x0DE8 "GeForce GT 620M" $cardLevelLowmedium $resolutionMedium
+    card 0x1140 "GeForce GT 620M" $cardLevelLowmedium $resolutionMedium
+    card 0x1058 "GeForce 610M" $cardLevelLowmedium $resolutionMedium
+    card 0x1059 "GeForce 610M" $cardLevelLowmedium $resolutionMedium
+    card 0x105A "GeForce 610M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DEA "GeForce 610M" $cardLevelLowmedium $resolutionMedium
+    card 0x1048 "GeForce 605" $cardLevelLowmedium $resolutionMedium
+    card 0x0DF8 "Quadro 600" $cardLevelLowmedium $resolutionMedium
+    card 0x0dfc "NVIDIA NVS 5200M" $cardLevelLowmedium $resolutionMedium
+    card 0x0ffb "NVIDIA Quadro K2000M" $cardLevelHigh $resolutionHigh
+    card 0x109a "NVIDIA Quadro 5010M" $cardLevelHigh $resolutionMedium
+    card 0x11bc "NVIDIA Quadro K5000M" $cardLevelUber $resolutionHigh
+    card 0x1088 "GeForce GTX 590" $cardLevelUber $resolutionHigh
+    card 0x1080 "Geforce GTX 580" $cardLevelUber $resolutionHigh
+    card 0x1089 "GeForce GTX 580" $cardLevelUber $resolutionHigh
+    card 0x108B "GeForce GTX 580" $cardLevelUber $resolutionHigh
+    card 0x1081 "GeForce GTX 570" $cardLevelUber $resolutionHigh
+    card 0x1086 "GeForce GTX 570" $cardLevelUber $resolutionHigh
+    card 0x1082 "GeForce GTX 560 Ti" $cardLevelUber $resolutionHigh
+    card 0x1200 "GeForce GTX 560 Ti" $cardLevelUber $resolutionHigh
+    card 0x1087 "GeForce GTX 560 Ti" $cardLevelUber $resolutionHigh
+    card 0x1208 "GeForce GTX 560 SE" $cardLevelHigh $resolutionHigh
+    card 0x1084 "GeForce GTX 560" $cardLevelHigh $resolutionHigh
+    card 0x1201 "GeForce GTX 560" $cardLevelHigh $resolutionHigh
+    card 0x1206 "GeForce  GTX 555" $cardLevelHigh $resolutionHigh
+    card 0x1244 "GeForce GTX 550 Ti" $cardLevelHigh $resolutionHigh
+    card 0x0004 "GeForce GTX 550 Ti" $cardLevelHigh $resolutionHigh
+    card 0x1241 "GeForce GT 545" $cardLevelMedium $resolutionHigh
+    card 0x1243 "GeForce GT 545" $cardLevelMedium $resolutionMedium
+    card 0x0DE5 "GeForce GT 530" $cardLevelLowmedium $resolutionMedium
+    card 0x0DE4 "GeForce GT 520" $cardLevelLowmedium $resolutionMedium
+    card 0x1040 "Geforce GT 520" $cardLevelLowmedium $resolutionMedium
+    card 0x1042 "GeForce 510" $cardLevelLowmedium $resolutionMedium
+    card 0x0FFD "NVS 510" $cardLevelLowmedium $resolutionMedium
+    card 0x1211 "GeForce GTX 580M" $cardLevelHigh $resolutionHigh
+    card 0x1210 "GeForce GTX 570M" $cardLevelHigh $resolutionHigh
+    card 0x1251 "GeForce GTX 560M" $cardLevelHigh $resolutionHigh
+    card 0x124D "GeForce GT 555M" $cardLevelHigh $resolutionHigh
+    card 0x1248 "GeForce GT 555M" $cardLevelHigh $resolutionHigh
+    card 0x0DEB "GeForce GT 555M" $cardLevelHigh $resolutionHigh
+    card 0x0DCD "GeForce GT 555M" $cardLevelHigh $resolutionHigh
+    card 0x0DCE "GeForce GT 555M" $cardLevelHigh $resolutionHigh
+    card 0x0DF6 "GeForce GT 550M" $cardLevelHigh $resolutionHigh
+    card 0x0DD6 "GeForce GT 550M" $cardLevelHigh $resolutionHigh
+    card 0x1246 "GeForce GT 550M" $cardLevelHigh $resolutionHigh
+    card 0x0DF4 "GeForce GT 540M" $cardLevelHigh $resolutionHigh
+    card 0x0DF5 "GeForce GT 525M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DEC "GeForce GT 525M" $cardLevelLowmedium $resolutionMedium
+    card 0x1050 "GeForce GT 520M" $cardLevelLowmedium $resolutionMedium
+    card 0x1051 "GeForce GT 520MX" $cardLevelLowmedium $resolutionMedium
+    card 0x1052 "GeForce GT 520M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DF7 "GeForce GT 520M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DED "GeForce GT 520M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a7b "NVIDIA GeForce 505" $cardLevelLowmedium $resolutionLow
+    card 0x0DF9 "Quadro 500M" $cardLevelLowmedium $resolutionMedium
+    card 0x06d8 "NVIDIA Quadro 6000" $cardLevelLowmedium $resolutionMedium
+    card 0x06dc "NVIDIA Quadro 6000" $cardLevelLowmedium $resolutionMedium
+    card 0x06d9 "NVIDIA Quadro 5000" $cardLevelLowmedium $resolutionMedium
+    card 0x06da "NVIDIA Quadro 5000m" $cardLevelLowmedium $resolutionMedium
+    card 0x06dd "NVIDIA Quadro 4000" $cardLevelLowmedium $resolutionMedium
+    card 0x0dd8 "NVIDIA Quadro 2000" $cardLevelMedium $resolutionMedium
+    card 0x0def "NVIDIA NVS 5400M" $cardLevelMedium $resolutionMedium
+    card 0x0dfa "NVIDIA Quadro 1000M" $cardLevelMedium $resolutionMedium
+    card 0x1056 "NVIDIA NVS 4200M" $cardLevelMedium $resolutionMedium
+    card 0x1057 "NVIDIA NVS 4200M" $cardLevelMedium $resolutionMedium
+    card 0x118a "NVIDIA GeForce GRID K520" $cardLevelHigh $resolutionHigh
+    card 0x11ba "NVIDIA Quadro K5000" $cardLevelHigh $resolutionHigh
+    card 0x11bd "NVIDIA Quadro K4000" $cardLevelHigh $resolutionHigh
+    card 0x06c0 "GeForce GTX 480" $cardLevelHigh $resolutionHigh
+    card 0x06cd "GeForce GTX 470" $cardLevelHigh $resolutionHigh
+    card 0x06c4 "NVIDIA GeForce GTX 465" $cardLevelHigh $resolutionHigh
+    card 0x0E22 "GeForce GTX 460" $cardLevelHigh $resolutionHigh
+    card 0x0E23 "GeForce GTX 460 SE" $cardLevelHigh $resolutionHigh
+    card 0x0E24 "GeForce GTX 460" $cardLevelHigh $resolutionHigh
+    card 0x1205 "GeForce GTX 460 v2" $cardLevelHigh $resolutionHigh
+    card 0x1245 "GeForce GTS 450" $cardLevelHigh $resolutionHigh
+    card 0x1249 "GeForce GTS 450" $cardLevelMedium $resolutionHigh
+    card 0x0DC4 "GeForce GTS 450" $cardLevelMedium $resolutionHigh
+    card 0x0DC5 "GeForce GTS 450" $cardLevelMedium $resolutionHigh
+    card 0x0DC6 "GeForce GTS 450" $cardLevelMedium $resolutionHigh
+    card 0x0dd4 "GeForce GTS 450" $cardLevelMedium $resolutionHigh
+    card 0x0DE0 "GeForce GT 440" $cardLevelMedium $resolutionMedium
+    card 0x0DC0 "GeForce GT 440" $cardLevelMedium $resolutionMedium
+    card 0x0DE1 "GeForce GT 430" $cardLevelLowmedium $resolutionMedium
+    card 0x0DE2 "GeForce GT 420" $cardLevelLowmedium $resolutionMedium
+    card 0x0A32 "GeForce GT 415" $cardLevelLowmedium $resolutionMedium
+    card 0x06f8 "NVIDIA Quadro NVS 420" $cardLevelLowmedium $resolutionMedium
+    card 0x0FFF "Quadro 410" $cardLevelLowmedium $resolutionLow
+    card 0x10C5 "GeForce 405" $cardLevelLowmedium $resolutionLow
+    card 0x1054 "GeForce 410M" $cardLevelLowmedium $resolutionLow
+    card 0x1055 "GeForce 410M" $cardLevelLowmedium $resolutionLow
+    card 0x0A26 "GeForce 405" $cardLevelLowmedium $resolutionLow
+    card 0x0A27 "GeForce 405" $cardLevelLowmedium $resolutionLow
+    card 0x0A7A "GeForce 405" $cardLevelLowmedium $resolutionLow
+    card 0x0A38 "Quadro 400" $cardLevelLowmedium $resolutionLow
+    card 0x0E31 "GeForce GTX 485M" $cardLevelHigh $resolutionHigh
+    card 0x06ca "NVIDIA GeForce GTX 480M" $cardLevelHigh $resolutionHigh
+    card 0x0E30 "GeForce GTX 470M" $cardLevelMedium $resolutionHigh
+    card 0x0DD1 "GeForce GTX 460M" $cardLevelMedium $resolutionHigh
+    card 0x0DD2 "GeForce GT 445M" $cardLevelMedium $resolutionMedium
+    card 0x0DD3 "GeForce GT 435M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DF2 "GeForce GT 435M" $cardLevelLowmedium $resolutionMedium
+    card 0x0DF0 "GeForce GT 425M" $cardLevelLowmedium $resolutionLow
+    card 0x0DF1 "GeForce GT 420M" $cardLevelLowmedium $resolutionLow
+    card 0x0DF3 "GeForce GT 420M" $cardLevelLowmedium $resolutionLow
+    card 0x0DEE "GeForce GT 415M" $cardLevelLowmedium $resolutionLow
+    card 0x0dda "NVIDIA Quadro 2000M" $cardLevelLowmedium $resolutionLow
+    card 0x0e3a "NVIDIA Quadro 3000M" $cardLevelMedium $resolutionMedium
+    card 0x0e3b "NVIDIA Quadro 4000M" $cardLevelMedium $resolutionMedium
+    card 0x0a6e "GeForce G 305M" $cardLevelLowmedium $resolutionLow
+    card 0x0a70 "GeForce G 310M" $cardLevelLowmedium $resolutionLow
+    card 0x0a71 "GeForce G 305M" $cardLevelLowmedium $resolutionLow
+    card 0x0a72 "GeForce G 310M" $cardLevelLowmedium $resolutionLow
+    card 0x0a73 "GeForce G 305M" $cardLevelLowmedium $resolutionLow
+    card 0x0a35 "GeForce GT 325M" $cardLevelLowmedium $resolutionLow
+    card 0x0a67 "GeForce G 315" $cardLevelLowmedium $resolutionLow
+    card 0x0A22 "GeForce G 315" $cardLevelLowmedium $resolutionLow
+    card 0x0a63 "GeForce G 310" $cardLevelLowmedium $resolutionLow
+    card 0x0a66 "GeForce G 310" $cardLevelLowmedium $resolutionLow
+    card 0x0a75 "GeForce G 310M" $cardLevelLowmedium $resolutionLow
+    card 0x0ca0 "GeForce GT 330" $cardLevelLowmedium $resolutionLow
+    card 0x0ca2 "GeForce GT 320" $cardLevelLowmedium $resolutionLow
+    card 0x0ca4 "GeForce GT 340" $cardLevelLowmedium $resolutionMedium
+    card 0x0ca7 "GeForce GT 330" $cardLevelLowmedium $resolutionMedium
+    card 0x0410 "GeForce GT 330" $cardLevelLowmedium $resolutionMedium
+    card 0x0caf "GeForce GT 335M" $cardLevelLowmedium $resolutionMedium
+    card 0x0cb0 "GeForce GTS 350M" $cardLevelLowmedium $resolutionMedium
+    card 0x0cb1 "GeForce GTS 360M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a29 "GeForce GT 330M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a2b "GeForce GT 330M" $cardLevelLowmedium $resolutionMedium
+    card 0x08a0 "GeForce GT 320M" $cardLevelLowmedium $resolutionMedium
+    card 0x08a2 "GeForce GT 320M" $cardLevelLowmedium $resolutionMedium
+    card 0x08a3 "GeForce GT 320M" $cardLevelLowmedium $resolutionMedium
+    card 0x08a4 "GeForce GT 320M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a2d "GeForce GT 320M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a2c "NVIDIA NVS 5100M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a3c "NVIDIA Quadro FX 880M" $cardLevelLowmedium $resolutionMedium
+    card 0x0a7c "NVIDIA Quadro FX 380M" $cardLevelLowmedium $resolutionLow
+    card 0x0cbc "NVIDIA Quadro FX 1800M" $cardLevelLowmedium $resolutionMedium
+    card 0x0ffa "NVIDIA Quadro K600" $cardLevelLowmedium $resolutionMedium
+    card 0x05E0 "GeForce GTX 295" $cardLevelHigh $resolutionMedium
+    card 0x05E1 "GeForce GTX 280" $cardLevelHigh $resolutionHigh
+    card 0x05E2 "GeForce GTX 260" $cardLevelHigh $resolutionHigh
+    card 0x05E3 "GeForce GTX 285" $cardLevelHigh $resolutionHigh
+    card 0x05E6 "GeForce GTX 275" $cardLevelHigh $resolutionHigh
+    card 0x05EA "GeForce GTX 260" $cardLevelHigh $resolutionHigh
+    card 0x05EB "GeForce GTX 295" $cardLevelHigh $resolutionHigh
+    card 0x0603 "GeForce GT 230" $cardLevelLowmedium $resolutionMedium
+    card 0x0621 "GeForce GT 230" $cardLevelLowmedium $resolutionMedium
+    card 0x0607 "GeForce GT 240" $cardLevelLowmedium $resolutionMedium
+    card 0x060A "GeForce GTX 280M" $cardLevelHigh $resolutionHigh
+    card 0x060F "GeForce GTX 285M" $cardLevelHigh $resolutionHigh
+    card 0x0415 "GeForce GTS 250" $cardLevelHigh $resolutionHigh
+    card 0x0615 "GeForce GTS 250" $cardLevelHigh $resolutionHigh
+    card 0x0618 "GeForce GTX 260M" $cardLevelMedium $resolutionMedium
+    card 0x0654 "GeForce GT 220M" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0a20 "GeForce GT 220" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0ca5 "GeForce GT 220" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0cac "GeForce GT 220" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0a30 "NVIDIA GT216" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0a23 "GeForce 210" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0a28 "GeForce GT 230M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0a2a "GeForce GT 230M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0a34 "GeForce GT 240M" $cardLevelMedium $resolutionLow
+    card 0x0a60 "GeForce G210" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0a62 "GeForce 205" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0a65 "GeForce 210" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x065f "NVIDIA GeForce G210" $cardLevelLowmedium $resolutionLow
+    card 0x0a74 "GeForce G210M" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0ca3 "GeForce GT 240" $cardLevelMedium $resolutionMedium
+    card 0x0ca8 "GeForce GTS 260M" $cardLevelMedium $resolutionLow
+    card 0x0ca9 "GeForce GTS 250M" $cardLevelMedium $resolutionLow
+    card 0x05f2 "NVIDIA GT200" $cardLevelHigh $resolutionHigh
+    card 0x05f9 "NVIDIA Quadro CX" $cardLevelHigh $resolutionHigh
+    card 0x05fd "NVIDIA Quadro FX 5800" $cardLevelHigh $resolutionHigh
+    card 0x05fe "NVIDIA Quadro FX 4800" $cardLevelHigh $resolutionHigh
+    card 0x05ff "NVIDIA Quadro FX 3800" $cardLevelMedium $resolutionHigh
+    card 0x0638 "NVIDIA Quadro FX 1800" $cardLevelMedium $resolutionMedium
+    card 0x06d1 "NVIDIA Tesla C2070" $cardLevelMedium $resolutionMedium
+    card 0x0a6a "NVIDIA NVS 2100M" $cardLevelLowmedium $resolutionLow
+    card 0x0a6c "NVIDIA NVS 3100M" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x107c "NVIDIA NVS 315" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x107d "NVIDIA NVS 310" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0626 "GeForce GT 130" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0627 "GeForce GT 140" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0631 "GeForce GTS 160M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0632 "GeForce GTS 150M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0646 "GeForce GT 120" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0655 "GeForce GT 120" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0651 "GeForce G 110M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0652 "GeForce GT 130M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0653 "GeForce GT 120M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06e6 "GeForce G100" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06ec "GeForce G 105M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06ef "GeForce G 103M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06f1 "GeForce G105M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0872 "GeForce G102M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0873 "GeForce G102M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a68 "GeForce G105M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a69 "GeForce G105M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01da "NVIDIA Quadro NVS 110M " $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0601 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x71cf "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0296 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0396 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0414 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x064e "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0624 "NVIDIA GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0604 "GeForce 9800 GX2" $cardLevelHigh $resolutionHigh
+    card 0x0605 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0097 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0608 "GeForce 9800M GTX" $cardLevelHigh $resolutionHigh
+    card 0x060B "GeForce 9800M GT" $cardLevelHigh $resolutionHigh
+    card 0x062f "GeForce 9800 S" $cardLevelHigh $resolutionHigh
+    card 0x0610 "GeForce 9600 GSO" $cardLevelHigh $resolutionHigh
+    card 0x0612 "GeForce 9800 GTX" $cardLevelHigh $resolutionHigh
+    card 0x0613 "GeForce 9800 GTX+" $cardLevelHigh $resolutionHigh
+    card 0x0614 "GeForce 9800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0617 "GeForce 9800M GTX" $cardLevelHigh $resolutionHigh
+    card 0x0622 "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x0647 "GeForce 9600M GT" $cardLevelMedium $resolutionMedium
+    card 0x0623 "GeForce 9600 GS" $cardLevelMedium $resolutionMedium
+    card 0x0625 "GeForce 9600 GSO 512" $cardLevelMedium $resolutionMedium
+    card 0x0628 "GeForce 9800M GTS" $cardLevelLowmedium $resolutionMedium
+    card 0x062a "GeForce 9700M GTS" $cardLevelLowmedium $resolutionMedium
+    card 0x062b "GeForce 9800M GS" $cardLevelLowmedium $resolutionMedium
+    card 0x062c "GeForce 9800M GTS" $cardLevelLowmedium $resolutionMedium
+    card 0x062d "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x062e "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x06ee "GeForce 9600 GSO" $cardLevelMedium $resolutionMedium
+    card 0x0635 "GeForce 9600 GSO" $cardLevelMedium $resolutionMedium
+    card 0x0637 "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x039f "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x00cf "GeForce 9600 GT" $cardLevelMedium $resolutionMedium
+    card 0x0640 "GeForce 9500 GT" $cardLevelMedium $resolutionMedium
+    card 0x0a6b "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x5b61 "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x5b66 "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x0641 "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x0643 "GeForce 9500 GT" $cardLevelMedium $resolutionMedium
+    card 0x0644 "GeForce 9500 GS" $cardLevelMedium $resolutionMedium
+    card 0x0645 "GeForce 9500 GS" $cardLevelMedium $resolutionMedium
+    card 0x0648 "GeForce 9600M GS" $cardLevelLowmedium $resolutionMedium
+    card 0x0649 "GeForce 9600M GT" $cardLevelLowmedium $resolutionMedium
+    card 0x064a "GeForce 9700M GT" $cardLevelLowmedium $resolutionMedium
+    card 0x064b "GeForce 9500M G" $cardLevelLowmedium $resolutionMedium unsupportedMac
+    card 0x064c "GeForce 9650M GT" $cardLevelLowmedium $resolutionMedium
+    card 0x0656 "GeForce 9650 S" $cardLevelMedium $resolutionHigh
+    card 0x065b "GeForce 9400 GT" $cardLevelMedium $resolutionLow
+    card 0x06e0 "GeForce 9300 GE" $cardLevelMedium $resolutionLow
+    card 0x06e1 "GeForce 9300 GS" $cardLevelMedium $resolutionLow
+    card 0x06e5 "GeForce 9300M GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06e7 "GeForce 9300 SE" $cardLevelMedium $resolutionLow
+    card 0x06e8 "GeForce 9200M GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06e9 "GeForce 9300M GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0860 "GeForce 9300" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0862 "GeForce 9400M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0864 "GeForce 9300" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0865 "GeForce 9300" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0866 "GeForce 9400M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0867 "GeForce 9400" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x016f "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x01d5 "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x042c "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x3e52 "GeForce 9400 GT" $cardLevelMedium $resolutionMedium
+    card 0x086a "GeForce 9400" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0869 "GeForce 9400" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x086c "GeForce 9300" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x086d "GeForce 9200" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0844 "GeForce 9100M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0847 "GeForce 9100" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x086e "GeForce 9100M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x086f "GeForce 9200M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0870 "GeForce 9400M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0871 "GeForce 9200" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x087a "GeForce 9400" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0408 "GeForce 9650M GS" $cardLevelLow $resolutionLow
+    card 0x0405 "GeForce 9500M GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0861 "GeForce 9400M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0863 "GeForce 9400M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x042e "GeForce 9300M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x063a "NVIDIA Quadro FX 2700M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x063f "NVIDIA G94" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0658 "NVIDIA Quadro FX 380" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0659 "NVIDIA Quadro FX 580" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x065a "NVIDIA Quadro FX 1700M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x065d "NVIDIA G96" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x06ea "NVIDIA Quadro NVS 150M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x06eb "NVIDIA Quadro NVS 160M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x06fb "NVIDIA Quadro FX 370M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0874 "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0876 "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x087d "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x087e "NVIDIA ION LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x087f "NVIDIA ION LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a64 "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a6f "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a76 "NVIDIA ION" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x10d8 "NVIDIA NVS 300" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0191 "GeForce 8800 GTX" $cardLevelHigh $resolutionHigh
+    card 0x0199 "GeForce 8800 GTX" $cardLevelHigh $resolutionHigh
+    card 0x0193 "GeForce 8800 GTS" $cardLevelHigh $resolutionHigh
+    card 0x0194 "GeForce 8800 Ultra" $cardLevelHigh $resolutionHigh
+    card 0x019D "GeForce 8800" $cardLevelHigh $resolutionHigh
+    card 0x0600 "GeForce 8800 GTS" $cardLevelHigh $resolutionHigh
+    card 0x0602 "GeForce 8800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0619 "GeForce 8800 GT" $cardLevelHigh $resolutionHigh
+    card 0x0606 "GeForce 8800 GS" $cardLevelHigh $resolutionHigh
+    card 0x0609 "GeForce 8800 GS" $cardLevelHigh $resolutionHigh
+    card 0x060C "GeForce 8800M GTX" $cardLevelHigh $resolutionHigh
+    card 0x060D "GeForce 8800 GS" $cardLevelHigh $resolutionHigh
+    card 0x0611 "GeForce 8800 GT" $cardLevelHigh $resolutionHigh
+    card 0x061A "GeForce 8800" $cardLevelHigh $resolutionHigh
+    card 0x06e2 "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06E3 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06e4 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x040D "Quadro FX 1600M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0409 "GeForce 8700M GT" $cardLevelMedium $resolutionMedium
+    card 0x0400 "GeForce 8600 GTS" $cardLevelMedium $resolutionMedium
+    card 0x10de "GeForce 8600 GT" $cardLevelMedium $resolutionMedium
+    card 0x0401 "GeForce 8600 GT" $cardLevelMedium $resolutionMedium
+    card 0x0402 "GeForce 8600 GT" $cardLevelMedium $resolutionMedium
+    card 0x0403 "GeForce 8600 GS" $cardLevelMedium $resolutionMedium
+    card 0x0407 "GeForce 8600 Go" $cardLevelMedium $resolutionMedium
+    card 0x040A "GeForce 8600" $cardLevelMedium $resolutionMedium
+    card 0x040E "GeForce 8600" $cardLevelMedium $resolutionMedium
+    card 0x040F "GeForce 8600" $cardLevelMedium $resolutionMedium
+    card 0x0425 "GeForce 8600m GS" $cardLevelMedium $resolutionMedium
+    card 0x0421 "GeForce 8500 GT" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x0427 "GeForce 8400M GS" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0426 "GeForce 8400M GT" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0428 "GeForce 8400M G" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x0420 "GeForce 8300 SE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0422 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0423 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0424 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0429 "NVIDIA Quadro NVS 140M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x042f "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0404 "GeForce 8300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0848 "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0849 "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x084b "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x084f "GeForce 8300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x10C3 "GeForce 8400GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0845 "NVIDIA GeForce 8200M G" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x06ed "NVIDIA G98" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x040b "NVIDIA Quadro NVS 320M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x040c "NVIDIA Quadro FX 570M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x042a "NVIDIA Quadro NVS 130M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x042b "NVIDIA Quadro NVS 135M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x042d "NVIDIA Quadro FX 360M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x061b "NVIDIA Quadro VX 200" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x061c "NVIDIA Quadro FX 3600M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x061d "NVIDIA Quadro FX 2800M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x061e "NVIDIA Quadro FX 3700M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x061f "NVIDIA Quadro FX 3800M" $cardLevelMedium $resolutionMedium unsupportedMac
+    card 0x06f9 "NVIDIA Quadro FX 370 LP" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0a78 "NVIDIA Quadro FX 380 LP" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0293 "GeForce 7950 GX2" $cardLevelMedium $resolutionMedium
+    card 0x0294 "GeForce 7950 GX2" $cardLevelMedium $resolutionMedium
+    card 0x0295 "GeForce 7950 GT" $cardLevelMedium $resolutionMedium
+    card 0x02e4 "GeForce 7950 GT" $cardLevelMedium $resolutionMedium
+    card 0x0290 "GeForce 7900 GTX" $cardLevelMedium $resolutionLow
+    card 0x0291 "GeForce 7900 GT" $cardLevelMedium $resolutionLow
+    card 0x0292 "GeForce 7900 GS" $cardLevelMedium $resolutionLow
+    card 0x0298 "GeForce 7900 Go GS" $cardLevelMedium $resolutionLow
+    card 0x0299 "GeForce 7900 Go GTX" $cardLevelMedium $resolutionLow
+    card 0x029C "GeForce 7900 Quadro" $cardLevelMedium $resolutionLow
+    card 0x029D "GeForce 7900" $cardLevelMedium $resolutionLow
+    card 0x029E "GeForce 7900" $cardLevelMedium $resolutionLow
+    card 0x029f "GeForce 7900" $cardLevelMedium $resolutionLow
+    card 0x02e3 "GeForce 7900 GS" $cardLevelMedium $resolutionLow
+    card 0x00F5 "GeForce 7800 GS" $cardLevelMedium $resolutionLow
+    card 0x0091 "GeForce 7800 GTX" $cardLevelMedium $resolutionLow
+    card 0x0092 "GeForce 7800 GT" $cardLevelMedium $resolutionLow
+    card 0x0093 "GeForce 7800 GS" $cardLevelMedium $resolutionLow
+    card 0x0095 "GeForce 7800 SLI" $cardLevelMedium $resolutionLow
+    card 0x0098 "GeForce 7800 Go" $cardLevelMedium $resolutionLow
+    card 0x0099 "GeForce 7800 Go GTX" $cardLevelMedium $resolutionLow
+    card 0x0090 "GeForce 7800 GTX" $cardLevelMedium $resolutionLow
+    card 0x019e "GeForce 7800" $cardLevelMedium $resolutionLow
+    card 0x02E1 "GeForce 7600 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0390 "GeForce 7600 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0391 "GeForce 7600 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0392 "GeForce 7600 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0394 "GeForce 7600 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x039e "GeForce 7600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x02e0 "GeForce 7600 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0398 "GeForce 7600 Go" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x016a "GeForce 7300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d0 "GeForce 7300 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d1 "GeForce 7300 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d3 "GeForce 7300 SE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01dd "GeForce 7300 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01de "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01df "GeForce 7300 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0393 "GeForce 7300 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0395 "GeForce 7300 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x02e2 "GeForce 7300 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d9 "GeForce 7300 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x053a "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x053b "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x053e "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x07e0 "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x07e1 "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x07e2 "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x07e3 "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x07e5 "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x084a "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x084c "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x084d "GeForce 7300" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0397 "GeForce Go 7700" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0399 "GeForce Go 7600 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d8 "GeForce Go 7400" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01d6 "GeForce Go 7200" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x01dc "NVIDIA Quadro FX 350M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x039a "NVIDIA Quadro NVS 300M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x029b "NVIDIA Quadro FX 1500M" $cardLevelMedium $resolutionLow unsupportedMac
+    card 0x039d "NVIDIA G73GL" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x03d6 "NVIDIA GeForce 7025 / NVIDIA nForce 630a" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0530 "NVIDIA GeForce 7190M / nForce 650M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0531 "NVIDIA_GeForce 7150M nForce_630M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0533 "NVIDIA GeForce 7000M / nForce 610M" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0040 "GeForce 6800 Ultra" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0041 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0042 "GeForce 6800 LE" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0043 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0044 "GeForce 6800 XT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0045 "GeForce 6800 GT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0046 "GeForce 6800 GT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0047 "GeForce 6800 GS" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0048 "GeForce 6800 XT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0049 "GeForce 6800 GL" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x004e "GeForce 6800 Quadro" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00F6 "GeForce 6800 GS" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00C0 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00C1 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00C2 "GeForce 6800 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00C3 "GeForce 6800 XT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00C8 "GeForce 6800 Go" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00c4 "GeForce 6800 Go" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00C9 "GeForce 6800 Go Ultra" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00f0 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00F8 "GeForce 6800 Quadro" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00f9 "GeForce 6800 Series GPU" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0211 "GeForce 6800" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0212 "GeForce 6800 LE" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0215 "GeForce 6800 GT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0218 "GeForce 6800 XT" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x00F4 "GeForce 6600 LE" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00F1 "GeForce 6600 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x00F2 "GeForce 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0140 "GeForce 6600 GT" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0141 "GeForce 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0142 "GeForce 6600 NV43" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0143 "GeForce 6600 NV43" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0144 "GeForce Go 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0145 "GeForce 6610 XL" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0147 "GeForce 6600 NV43" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0148 "GeForce Go 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0149 "GeForce 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x014A "GeForce 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x014B "GeForce 6600" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x014C "GeForce 6600 GL" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x014D "GeForce 6600 GL" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x014F "GeForce 6200" $cardLevelLow $resolutionLow unsupported
+    card 0x0160 "GeForce 6200 NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0161 "GeForce 6200 TC" $cardLevelLow $resolutionLow unsupported
+    card 0x0162 "GeForce 6200 TC SE NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0163 "GeForce 6200 LE NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0164 "GeForce 6200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0165 "GeForce 6200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0167 "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x0168 "GeForce 6200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0169 "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x016B "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x016C "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x016D "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x016E "GeForce 6200 NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0220 "GeForce 6200 NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0221 "GeForce 6200 NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0222 "GeForce 6200 NV44" $cardLevelLow $resolutionLow unsupported
+    card 0x0228 "GeForce 6200 Go NV44M" $cardLevelLow $resolutionLow unsupported
+    card 0x00F3 "GeForce 6200" $cardLevelLow $resolutionLow unsupported
+    card 0x022a "GeForce 6200 LE" $cardLevelLow $resolutionLow unsupported
+    card 0x032e "GeForce 6200" $cardLevelLow $resolutionLow unsupported
+    card 0x0146 "NVIDIA GeForce Go 6200 TE 64M / 6600 TE 128M" $cardLevelLow $resolutionLow unsupported
+    card 0x0240 "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x0241 "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x0242 "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x0245 "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x029A "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x03D0 "GeForce 6100 nForce 430" $cardLevelLow $resolutionLow unsupported
+    card 0x03D1 "GeForce 6100 nForce 405" $cardLevelLow $resolutionLow unsupported
+    card 0x03D2 "GeForce 6100 nForce 400" $cardLevelLow $resolutionLow unsupported
+    card 0x03D5 "GeForce 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x0244 "GeForce GO 6150" $cardLevelLow $resolutionLow unsupported
+    card 0x0247 "GeForce Go 6100" $cardLevelLow $resolutionLow unsupported
+    card 0x0333 "GeForce 5950 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x00fb "GeForce 5900" $cardLevelLow $resolutionLow unsupported
+    card 0x0332 "GeForceFX 5900 NV35" $cardLevelLow $resolutionLow unsupported
+    card 0x0334 "GeForce 5900 ZT" $cardLevelLow $resolutionLow unsupported
+    card 0x0338 "GeForce 5900 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x033f "GeForce 5900 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x0330 "GeForce 5900 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0331 "GeForce 5900" $cardLevelLow $resolutionLow unsupported
+    card 0x034c "GeForce 5800 Go Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x0301 "GeForce 5800 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0302 "GeForce 5800" $cardLevelLow $resolutionLow unsupported
+    card 0x00fa "GeForce 5700" $cardLevelLow $resolutionLow unsupported
+    card 0x0341 "GeForceFX 5700 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0342 "GeForceFX 5700" $cardLevelLow $resolutionLow unsupported
+    card 0x0343 "GeForceFX 5700LE" $cardLevelLow $resolutionLow unsupported
+    card 0x0344 "GeForceFX 5700VE" $cardLevelLow $resolutionLow unsupported
+    card 0x0345 "GeForce 5700" $cardLevelLow $resolutionLow unsupported
+    card 0x0347 "GeForceFX Go5700" $cardLevelLow $resolutionLow unsupported
+    card 0x0348 "GeForceFX Go5700" $cardLevelLow $resolutionLow unsupported
+    card 0x0349 "GeForce 5700 Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x034b "GeForce 5700" $cardLevelLow $resolutionLow unsupported
+    card 0x034e "GeForce 5700 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x034f "GeForce 5700 GL" $cardLevelLow $resolutionLow unsupported
+    card 0x034a "NVIDIA GeForce FX 5700LE (Microsoft Corporation)" $cardLevelLow $resolutionLow unsupported
+    card 0x0308 "GeForceFX 5600 QuadroFX 2000" $cardLevelLow $resolutionLow unsupported
+    card 0x0309 "GeForceFX 5600 QuadroFX 1000" $cardLevelLow $resolutionLow unsupported
+    card 0x030a "GeForceFX 5600 ICE FX 2000" $cardLevelLow $resolutionLow unsupported
+    card 0x0311 "GeForceFX 5600 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0312 "GeForceFX 5600" $cardLevelLow $resolutionLow unsupported
+    card 0x0313 "GeForceFX 5600 NV31" $cardLevelLow $resolutionLow unsupported
+    card 0x0314 "GeForceFX 5600SE" $cardLevelLow $resolutionLow unsupported
+    card 0x0316 "GeForceFX Go 5600 NV31M" $cardLevelLow $resolutionLow unsupported
+    card 0x0317 "GeForceFX Go 5600 NV31M Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x031a "GeForceFX Go 5600" $cardLevelLow $resolutionLow unsupported
+    card 0x031b "GeForceFX Go 5650" $cardLevelLow $resolutionLow unsupported
+    card 0x031c "GeForceFX Go 5600 Quadro FX Go700" $cardLevelLow $resolutionLow unsupported
+    card 0x031d "GeForceFX Go 5600 NV31GLM" $cardLevelLow $resolutionLow unsupported
+    card 0x031e "GeForceFX Go 5600 NV31GLM Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x031f "GeForceFX Go 5600 NV31GLM Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x0329 "GeForce 5600" $cardLevelLow $resolutionLow unsupported
+    card 0x032a "GeForceFX 5600 NV34GL" $cardLevelLow $resolutionLow unsupported
+    card 0x032b "GeForceFX 5600 Quadro FX 500" $cardLevelLow $resolutionLow unsupported
+    card 0x032f "GeForceFX 5600 NV34GL" $cardLevelLow $resolutionLow unsupported
+    card 0x0326 "GeForce 5600" $cardLevelLow $resolutionLow unsupported
+    card 0x032c "GeForceFX Go 53xx" $cardLevelLow $resolutionLow unsupported
+    card 0x00fc "GeForce 5200" $cardLevelLow $resolutionLow unsupported
+    card 0x00fd "GeForce 5200 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x0320 "GeForce 5200" $cardLevelLow $resolutionLow unsupported
+    card 0x0321 "GeForce 5200 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0322 "GeForce 5200" $cardLevelLow $resolutionLow unsupported
+    card 0x0323 "GeForce 5200 SE" $cardLevelLow $resolutionLow unsupported
+    card 0x0324 "GeForce 5200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0328 "GeForce 5200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0325 "GeForce 5200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0327 "GeForce 5200" $cardLevelLow $resolutionLow unsupported
+    card 0x032d "GeForce 5200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x009D "GeForceFX Quadro FX 4500" $cardLevelLow $resolutionLow unsupported
+    card 0x00CC "GeForceFX Quadro FX Go1400" $cardLevelLow $resolutionLow unsupported
+    card 0x00CD "GeForceFX Quadro FX 3450/4000 SDI" $cardLevelLow $resolutionLow unsupported
+    card 0x00CE "GeForceFX Quadro FX 1400" $cardLevelLow $resolutionLow unsupported
+    card 0x00fe "GeForceFX QuadroFX 1300" $cardLevelLow $resolutionLow unsupported
+    card 0x00ff "GeForceFX PCX 4300" $cardLevelLow $resolutionLow unsupported
+    card 0x014E "GeForceFX Quadro FX 540" $cardLevelLow $resolutionLow unsupported
+    card 0x0170 "GeForce4 MX 460" $cardLevelLow $resolutionLow unsupported
+    card 0x0171 "GeForce4 MX 440" $cardLevelLow $resolutionLow unsupported
+    card 0x0172 "GeForce4 MX 420" $cardLevelLow $resolutionLow unsupported
+    card 0x0173 "GeForce4 MX 440-SE" $cardLevelLow $resolutionLow unsupported
+    card 0x0174 "GeForce4 440 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0175 "GeForce4 420 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0176 "GeForce4 420 Go 32M" $cardLevelLow $resolutionLow unsupported
+    card 0x0177 "GeForce4 460 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0178 "GeForce4 Quadro4 550 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x0179 "GeForce4 440 Go 64M" $cardLevelLow $resolutionLow unsupported
+    card 0x017a "GeForce4 Quadro NVS" $cardLevelLow $resolutionLow unsupported
+    card 0x017b "GeForce4 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x017c "GeForce4 Quadro 500 GoGL" $cardLevelLow $resolutionLow unsupported
+    card 0x017d "GeForce4 410 Go 16M" $cardLevelLow $resolutionLow unsupported
+    card 0x0181 "GeForce4 MX 440 with AGP8X" $cardLevelLow $resolutionLow unsupported
+    card 0x0182 "GeForce4 MX 440SE with AGP8X" $cardLevelLow $resolutionLow unsupported
+    card 0x0183 "GeForce4 MX 420 with AGP8X" $cardLevelLow $resolutionLow unsupported
+    card 0x0185 "GeForce4 MX 4000" $cardLevelLow $resolutionLow unsupported
+    card 0x0186 "GeForce4 448 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0187 "GeForce4 488 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0188 "GeForce4 Quadro4 580 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x018a "GeForce4 Quadro4 NVS with AGP8X" $cardLevelLow $resolutionLow unsupported
+    card 0x018b "GeForce4 Quadro4 380 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x018d "GeForce4 448 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x01f0 "GeForce4 MX Integrated GPU" $cardLevelLow $resolutionLow unsupported
+    card 0x0250 "GeForce4 Ti 4600" $cardLevelLow $resolutionLow unsupported
+    card 0x0251 "GeForce4 Ti 4400" $cardLevelLow $resolutionLow unsupported
+    card 0x0252 "GeForce4 Ti 4400 NV25" $cardLevelLow $resolutionLow unsupported
+    card 0x0253 "GeForce4 Ti 4200" $cardLevelLow $resolutionLow unsupported
+    card 0x0258 "GeForce4 Quadro4 900 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x0259 "GeForce4 Quadro4 750 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x025b "GeForce4 Quadro4 700 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x0280 "GeForce4 Ti 4800" $cardLevelLow $resolutionLow unsupported
+    card 0x0281 "GeForce4 Ti 4200 with AGP8X" $cardLevelLow $resolutionLow unsupported
+    card 0x0282 "GeForce4 Ti 4800 SE" $cardLevelLow $resolutionLow unsupported
+    card 0x0286 "GeForce4 4200 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0288 "GeForce4 Quadro4 980 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x0289 "GeForce4 Quadro4 780 XGL" $cardLevelLow $resolutionLow unsupported
+    card 0x028c "GeForce4 Quadro4 700 GoGL" $cardLevelLow $resolutionLow unsupported
+    card 0x02a0 "GeForce3 XBOX" $cardLevelLow $resolutionLow unsupported
+    card 0x0200 "GeForce3" $cardLevelLow $resolutionLow unsupported
+    card 0x0201 "GeForce3 Ti 200" $cardLevelLow $resolutionLow unsupported
+    card 0x0202 "GeForce3 Ti 500" $cardLevelLow $resolutionLow unsupported
+    card 0x0203 "GeForce3 Quadro DCC" $cardLevelLow $resolutionLow unsupported
+    card 0x01a0 "GeForce2 Integrated GPU" $cardLevelLow $resolutionLow unsupported
+    card 0x0110 "GeForce2 MX/MX 400" $cardLevelLow $resolutionLow unsupported
+    card 0x0111 "GeForce2 MX 100/200" $cardLevelLow $resolutionLow unsupported
+    card 0x0112 "GeForce2 Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0113 "GeForce2 Quadro MXR/EX/Go" $cardLevelLow $resolutionLow unsupported
+    card 0x0150 "GeForce2 GTS/GeForce2 Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x0151 "GeForce2 Ti" $cardLevelLow $resolutionLow unsupported
+    card 0x0152 "GeForce2 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0153 "GeForce2 Quadro2 Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x0100 "GeForce 256" $cardLevelLow $resolutionLow unsupported
+    card 0x0101 "GeForce 256 DDR" $cardLevelLow $resolutionLow unsupported
+    card 0x0102 "GeForce 256 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x0103 "GeForce 256 Quadro" $cardLevelLow $resolutionLow unsupported
+    card 0x0008 "NV 1" $cardLevelLow $resolutionLow unsupported
+    card 0x0009 "NV 1" $cardLevelLow $resolutionLow unsupported
+    card 0x0010 "NV 2" $cardLevelLow $resolutionLow unsupported
+    card 0x0018 "Riva 128" $cardLevelLow $resolutionLow unsupported
+    card 0x0019 "Riva 128 ZX" $cardLevelLow $resolutionLow unsupported
+    card 0x00a0 "TNT2 Aladdin" $cardLevelLow $resolutionLow unsupported
+    card 0x0028 "TNT2/TNT2 Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x0029 "TNT2 Ultra" $cardLevelLow $resolutionLow unsupported
+    card 0x002a "TNT2" $cardLevelLow $resolutionLow unsupported
+    card 0x002b "TNT2" $cardLevelLow $resolutionLow unsupported
+    card 0x002d "TNT2 Model 64/Model 64 Pro" $cardLevelLow $resolutionLow unsupported
+    card 0x0020 "TNT" $cardLevelLow $resolutionLow unsupported
+    card 0x002c "TNT Vanta/Vanta LT" $cardLevelLow $resolutionLow unsupported
+    card 0x002e "TNT Vanta" $cardLevelLow $resolutionLow unsupported
+    card 0x002f "TNT Vanta" $cardLevelLow $resolutionLow unsupported
+    card 0x1b1d "Riva 128" $cardLevelLow $resolutionLow unsupported
+end
+vendor "Intel" 0x8086
+    card 0x2A42 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2A43 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E02 "Intel® Graphics Media Accelerator X4500HD" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E03 "Intel® Graphics Media Accelerator X4500HD" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E22 "Intel® Graphics Media Accelerator X4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E23 "Intel® Graphics Media Accelerator X4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E12 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E13 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E32 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E33 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E42 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E43 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E92 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x2E93 "Intel® Graphics Media Accelerator 4500" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0046 "Intel HD Graphics" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0042 "Intel HD Graphics" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x08CF "Intel HD Graphics" $cardLevelLow $resolutionLow unsupportedMac
+    card 0x0f31 "Mobile SandyBridge GT1" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0106 "Mobile SandyBridge GT1" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0102 "Desktop SandyBridge GT1" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x010A "Server SandyBridge" $cardLevelLowmedium $resolutionLow unsupportedMac
+    card 0x0112 "Desktop SandyBridge GT2" $cardLevelLowmedium $resolutionMedium
+    card 0x0122 "Desktop SandyBridge GT2+" $cardLevelLowmedium $resolutionMedium
+    card 0x0116 "Mobile SandyBridge GT2" $cardLevelLowmedium $resolutionMedium
+    card 0x0126 "Mobile SandyBridge GT2+" $cardLevelLowmedium $resolutionMedium
+    card 0x0152 "Desktop IvyBridge GT1" $cardLevelLowmedium $resolutionMedium
+    card 0x0156 "Mobile IvyBridge GT1" $cardLevelLowmedium $resolutionMedium
+    card 0x015A "Server IvyBridge GT1" $cardLevelLowmedium $resolutionMedium
+    card 0x015E "Reserved - IvyBridge GT1" $cardLevelLowmedium $resolutionMedium
+    card 0x0162 "Desktop IvyBridge GT2" $cardLevelLowmedium $resolutionMedium
+    card 0x0166 "Mobile IvyBridge GT2" $cardLevelLowmedium $resolutionMedium
+    card 0x016A "Server IvyBridge GT2" $cardLevelLowmedium $resolutionMedium
+    card 0x0402 "4th Gen Intel(R) Core processor graphics - Desktop Haswell GT1" $cardLevelMedium $resolutionMedium
+    card 0x0406 "4th Gen Intel(R) Core processor graphics - Mobile Haswell GT1" $cardLevelMedium $resolutionMedium
+    card 0x040A "4th Gen Intel(R) Core processor graphics - Server Haswell GT1" $cardLevelMedium $resolutionMedium
+    card 0x0412 "4th Gen Intel(R) Core processor graphics HD 4600 - Desktop Haswell GT2" $cardLevelMedium $resolutionMedium
+    card 0x0416 "4th Gen Intel(R) Core processor graphics - Mobile Haswell GT2" $cardLevelMedium $resolutionMedium
+    card 0x041B "4th Gen Intel(R) Core processor graphics - Workstation Haswell GT2" $cardLevelMedium $resolutionMedium
+    card 0x041A "4th Gen Intel(R) Core processor graphics - Server Haswell GT2" $cardLevelMedium $resolutionMedium
+    card 0x041E "4th Gen Intel(R) Core processor graphics HD 4400 - Reserved Haswell" $cardLevelMedium $resolutionLow
+    card 0x0A06 "4th Gen Intel(R) Core processor graphics - Mobile Haswell - ULT GT1" $cardLevelMedium $resolutionMedium
+    card 0x0A0E "4th Gen Intel(R) Core processor graphics - Reserved Haswell - ULT GT1" $cardLevelMedium $resolutionMedium
+    card 0x0A16 "4th Gen Intel(R) Core processor graphics HD 4400 - Mobile Haswell - ULT GT2" $cardLevelMedium $resolutionLow
+    card 0x0A1E "4th Gen Intel(R) Core processor graphics HD 4200 - Mobile Haswell - ULT GT2" $cardLevelMedium $resolutionLow
+    card 0x0A26 "4th Gen Intel(r) Core processor graphics HD 5000 - Mobile Haswell - ULT GT3" $cardLevelMedium $resolutionMedium
+    card 0x0A2E "4th Gen Intel(R) Core processor graphics HD 5100 Iris - Mobile Haswell - ULT GT3" $cardLevelMedium $resolutionMedium
+    card 0x0D12 "4th Gen Intel(R) Core processor graphics - Mobile Haswell - ULT GT2" $cardLevelMedium $resolutionMedium
+    card 0x0D16 "4th Gen Intel(R) Core processor graphics HD 4600 - Mobile Haswell - ULT GT2" $cardLevelMedium $resolutionMedium
+    card 0x161E "Intel(R) HD Graphics 5300" $cardLevelMedium $resolutionMedium
+    card 0x1616 "Intel(R) HD Graphics 5500" $cardLevelMedium $resolutionMedium
+    card 0x0D22 "4th Gen Intel(R) Core processor graphics HD 5200 Iris Pro - Desktop GT3" $cardLevelMedium $resolutionMedium
+    card 0x0D26 "4th Gen Intel(R) Core processor graphics HD 5200 Iris Pro -  Mobile GT3" $cardLevelMedium $resolutionMedium
+    card 0x0D2A "4th Gen Intel(R) Core processor graphics Iris Pro - Server GT3" $cardLevelMedium $resolutionMedium
+    card 0x1606 "Intel Broadwell HD Graphics M ULT GT1" $cardLevelMedium $resolutionMedium
+    card 0x1626 "Intel (R) Iris Graphics 6000" $cardLevelMedium $resolutionMedium
+    card 0x162B "Intel (R) Iris Graphics 6100" $cardLevelMedium $resolutionMedium
+    card 0x1622 "Intel (R) Iris Graphics 6200" $cardLevelMedium $resolutionMedium
+    card 0x1927 "Intel (R) HD 550" $cardLevelMedium $resolutionMedium
+    card 0x1926 "Intel (R) HD 540" $cardLevelMedium $resolutionMedium
+    card 0x1912 "Intel (R) HD 530" $cardLevelMedium $resolutionMedium
+    card 0x191B "Intel (R) HD 530" $cardLevelMedium $resolutionMedium
+    card 0x1916 "Intel (R) HD 520" $cardLevelMedium $resolutionMedium
+    card 0x191E "Intel (R) HD 515" $cardLevelMedium $resolutionMedium
+    card 0x1906 "Intel (R) HD 510" $cardLevelMedium $resolutionMedium
+    card 0x1902 "Intel (R) HD 510" $cardLevelMedium $resolutionMedium
+    card 0x5916 "Intel (R) HD 620" $cardLevelMedium $resolutionMedium
+    card 0x5926 "Intel (R) HD 640" $cardLevelMedium $resolutionMedium
+    card 0x2982 "Intel® Graphics Media Accelerator X3500" $cardLevelLow $resolutionLow unsupported
+    card 0x2983 "Intel® Graphics Media Accelerator X3500" $cardLevelLow $resolutionLow unsupported
+    card 0x0be1 "Intel(R) Graphics Media Accelerator 3600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x0be2 "Intel(R) Graphics Media Accelerator 3600 Series" $cardLevelLow $resolutionLow unsupported
+    card 0x2A02 "Intel® Graphics Media Accelerator X3100 Crestline" $cardLevelLow $resolutionLow unsupported
+    card 0x2A03 "Intel® Graphics Media Accelerator X3100 Crestline" $cardLevelLow $resolutionLow unsupported
+    card 0x2A12 "Intel® Graphics Media Accelerator X3100 Crestline" $cardLevelLow $resolutionLow unsupported
+    card 0x2A13 "Intel® Graphics Media Accelerator X3100 Crestline" $cardLevelLow $resolutionLow unsupported
+    card 0x2972 "Intel® Graphics Media Accelerator 3000" $cardLevelLow $resolutionLow unsupported
+    card 0x2973 "Intel® Graphics Media Accelerator 3000" $cardLevelLow $resolutionLow unsupported
+    card 0x29B2 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x29B3 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x29C2 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x29C3 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x29D2 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x29D3 "Intel® Graphics Media Accelerator 3100" $cardLevelLow $resolutionLow unsupported
+    card 0x2992 "Intel® Graphics Media Accelerator 3000" $cardLevelLow $resolutionLow unsupported
+    card 0x2993 "Intel® Graphics Media Accelerator 3000" $cardLevelLow $resolutionLow unsupported
+    card 0x29A2 "GMA 3000 (G965 Express Chipset Family)" $cardLevelLow $resolutionLow unsupported
+    card 0x29A3 "GMA 3000 (G965 Express Chipset Family)" $cardLevelLow $resolutionLow unsupported
+    card 0x2772 "945 (82945G Express Chipset Family Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x2776 "945 (82945G Express Chipset Family Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x27A2 "945 Mobile" $cardLevelLow $resolutionLow unsupported
+    card 0x27A6 "945 Mobile" $cardLevelLow $resolutionLow unsupported
+    card 0x27ae "Mobile Intel(R) 945 Express Chipset Family " $cardLevelLow $resolutionLow unsupported
+    card 0x2582 "915 (82915G Express Chipset Family Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x2792 "915 Mobile" $cardLevelLow $resolutionLow unsupported
+    card 0x2782 "915 (82915G Express Chipset Family Graphics Controller" $cardLevelLow $resolutionLow unsupported
+    card 0x2592 "915 Mobile" $cardLevelLow $resolutionLow unsupported
+    card 0x2572 "865 (82865G Integrated Graphics Device)" $cardLevelLow $resolutionLow unsupported
+    card 0x3582 "855 (82852/855GM Integrated Graphics Device)" $cardLevelLow $resolutionLow unsupported
+    card 0x2562 "845 (82845G/GL[Brookdale-G]/GE Chipset Integrated Graphics Device)" $cardLevelLow $resolutionLow unsupported
+    card 0x3577 "830 (82830 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x1132 "815 (82815 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7121 "810 (82810 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7123 "810 (82810 DC-100 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7125 "810e (82810E DC-133 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7126 "810 (82810 DC-133 System and Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7127 "810 (82810 Chipset Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x7128 "810 (82810-M DC-100 System and Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x712a "810 (82810-M DC-133 System and Graphics Controller)" $cardLevelLow $resolutionLow unsupported
+    card 0x1240 "752 (82752 AGP Graphics Accelerator)" $cardLevelLow $resolutionLow unsupported
+    card 0x7800 "740 (82740 (i740) AGP Graphics Accelerator)" $cardLevelLow $resolutionLow unsupported
+    card 0x4102 "Intel(R) Graphics Media Accelerator 600" $cardLevelLow $resolutionLow unsupported
+    card 0xA001 "Intel(R) NetTop Atom D410 (GMA 3150)" $cardLevelLow $resolutionLow unsupported
+    card 0xA002 "Intel(R) NetTop Atom D510 (GMA 3150)" $cardLevelLow $resolutionLow unsupported
+    card 0xA011 "Intel(R) NetBook Atom N4x0 (GMA 3150)" $cardLevelLow $resolutionLow unsupported
+    card 0xA012 "Intel(R) NetBook Atom N4x0 (GMA 3150)" $cardLevelLow $resolutionLow unsupported
+    card 0x22B0 "Intel(R) Cherryview Ultrabook" $cardLevelLow $resolutionLow unsupported
+    card 0x22B1 "Intel(R) Cherryview Ultrabook" $cardLevelLow $resolutionLow unsupported
+    card 0x5A85 "Intel(R) Apollo Lake Ultrabook" $cardLevelLow $resolutionLow unsupported
+    card 0x5A84 "Intel(R) Apollo Lake Ultrabook" $cardLevelLow $resolutionLow unsupported
+    card 0x8108 "Intel(R) GMA 500 (Poulsbo) on MID platforms" $cardLevelLow $resolutionLow unsupported
+    card 0x8109 "Intel(R) GMA 500 (Poulsbo) on MID platforms" $cardLevelLow $resolutionLow unsupported
+end
+vendor "S3" 0x5333
+    card 0x9045 "Chrome 440 GTX" $cardLevelLow $resolutionLow unsupported
+end
+
+#<
+ xa37dd45ffe100bfffcc9753aabac325f07cb3fa231144fe2e33ae4783feead2b8a73ff021fac326df0ef9753ab9cdf6573ddff0312fab0b0ff39779eaff312a4f5de65892ffee33a44569bebf21f66d22e54a22347efd375981188743afd99baacc342d88a99321235798725fedcbf43252669dade32415fee89da543bf23d4ex
+#>
