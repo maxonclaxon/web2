@@ -2,5 +2,5 @@
     $host='localhost';
     $database='zz_bd';
     $user='root';
-    $pas="";
+    $pas="Hq54foepo";
 ?>

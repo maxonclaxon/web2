@@ -12,18 +12,13 @@
         if ( !empty($myrow['Nickname']) )
         {
             $_SESSION['logged_user'] = $login;
-            header('Location: '. 'index.php');
+            $_SESSION['admin'] = $myrow['Access'];
+            header('Location: '. '/index.php');
         }
     
         else
         {
             $errors[] = 'Пользователь с таким логином или паролем не найден!';
-        }
-        
-        if ( ! empty($errors) )
-        {
-            //выводим ошибки авторизации
-            echo '<div id="errors" style="color:red;">' .array_shift($errors). '</div><hr>';
         }
     
     }

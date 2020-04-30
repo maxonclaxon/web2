@@ -19,14 +19,14 @@
    
     $query = "INSERT INTO post (Nickname,Title,Message,Datetime,Filenames) VALUES('$nickname','$title','$message','$date','$filename')";
     if(mysqli_query($link,$query)){
-        echo('пост успешно создан!');
+        header('Location: '. '/index.php');
     }
     else{
         echo 'Ошибка при создании поста';
     }
  }
  else{
-     header('Location'.'index.php');
+     header('Location'.'/index.php');
  }
 
 ?>

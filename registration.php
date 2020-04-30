@@ -19,7 +19,7 @@
             Подтверждение: <input id="re_pass" type="password" name="password2" /><br />
             Имя: <input id="name" type="text" name="Name"pattern="^[А-Яа-яЁё\s]+$"><br/>
             Email: <input id="mail" type="email" name="mail" /><br />
-            <label ><input id="pers" type="checkbox" name="pers" /> Даю своё согласие на обработку персональных данных.<br /></label><br />
+            <input id="pers" type="checkbox" name="pers" /> Даю своё согласие на обработку персональных данных.<br />
             <input type="submit" id="sub" name="GO" value="Регистрация" disabled>
         </form>
         <div class="errors">

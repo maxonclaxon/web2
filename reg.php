@@ -37,6 +37,12 @@
         if (!empty($myrow['Nickname'])) {
         exit ("Извините, введённый вами логин уже зарегистрирован. Введите другой логин.");
         }
+        $query = "SELECT Email FROM profile WHERE Email='$mail'";
+        $result = mysqli_query($link,$query);
+        $myrow = mysqli_fetch_array($result);
+        if (!empty($myrow['Email'])) {
+        exit ("Извините, введённый вами email уже зарегистрирован. Введите другой Email.");
+        }
     // если такого нет, то сохраняем данные
         $result2 = mysqli_query ($link,"INSERT INTO profile (Nickname,Password,Name,Email,Access) VALUES('$login','$password','$name','$mail','0')");
         // Проверяем, есть ли ошибки
