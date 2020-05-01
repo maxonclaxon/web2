@@ -7,7 +7,7 @@
     <script src="/jquery-3.5.0.min.js"></script>
     <script src="/js/registration.js"></script>
     
-    <title>Document</title>
+    <title>Регистрация</title>
 </head>
 <body>
     <?php include('blocks/header/header.php') ?>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include('includes.php'); session_start(); ?>
     
-    <title>Document</title>
+    <title>Создать пост</title>
 </head>
 <body>
     <?php include('blocks/header/header.php') ?>
